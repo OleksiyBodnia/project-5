@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 375px){
     .projects-list{
         margin-bottom: 32px;
@@ -6,19 +7,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 64px;
+        
         gap: 12px;
-    }
-    .left-btn,
-    .right-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: 1px solid rgba(250, 250, 250, 0.20);
-        background-color: transparent;
     }
     .projest-main-header{
         color: rgba(250, 250, 250, 0.40);
@@ -102,9 +92,34 @@
     .project-link:focus{
         background-color: #E0373F;
     }
+    #btn-div{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 32px;
+        margin-bottom: 64px;
+
+    }
+    #left-btn,
+    #right-btn{
+        display: block;
+        padding: 18px;
+        border: 1px solid rgba(250, 250, 250, 0.50);
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        color: transparent;
+        position: relative;
+        background-color: transparent;
+    }
 }
 
 @media screen and (min-width: 768px){
+    #btn-div{
+        gap: 40px;
+    }
     .projects-list{
         margin-bottom: 64px;
     }
@@ -133,6 +148,9 @@
     }
 }
 @media screen and (min-width: 1440px){
+    #project-item{
+        display: flex;
+    }
     .btn-div{
         margin-bottom: 164px;
     }
