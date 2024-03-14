@@ -93,7 +93,7 @@ body{
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
     padding: 0 32px;
