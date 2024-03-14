@@ -1,9 +1,9 @@
 <section class="projects-section" id="projects-section">
     <div class="projects container">
         <h2 class="projest-main-header">Projects</h2>
-        <div class="swiper-container">
-            <ul class="projects-list">
-                <li class="project-item">
+        <div class="swiper">
+            <ul class="projects-list  swiper-wrapper">
+                <li class="project-item swiper-slide" id="project-item">
                     <div class="left-side">
                         <ul class="tech-skills-list">
                             <li class="tech-skill-item">#react</li>
@@ -25,14 +25,14 @@
                                     ./img/tablet/t-project-1@2x.jpg 2x
                                     " type="image/jpg" />
                             <source media="(max-width:767px)" srcset="
-                                    ./img/mobil/m-projects-1.jpg 1x,
-                                    ./img/mobil/m-projects-1@2x.jpg 2x
+                                    ./img/mobil/m-project-1.jpg 1x,
+                                    ./img/mobil/m-project-1@2x.jpg 2x
                                     " type="image/jpg" />
                             <img class="img" src="../img/mobil/m-projects-1.jpg" alt="project" loading="lazy" />
                         </picture>
                     </div>
-                </li>
-                <li class="project-item">
+                </li> 
+                <li class="project-item swiper-slide" id="project-item">
                     <div class="left-side">
                         <ul class="tech-skills-list">
                             <li class="tech-skill-item">#react</li>
@@ -54,14 +54,14 @@
                                     ./img/tablet/t-project-2@2x.jpg 2x
                                     " type="image/jpg" />
                             <source media="(max-width:767px)" srcset="
-                                    ./img/mobil/m-projects-2.jpg 1x,
-                                    ./img/mobil/m-projects-2@2x.jpg 2x
+                                    ./img/mobil/m-project-2.jpg 1x,
+                                    ./img/mobil/m-project-2@2x.jpg 2x
                                     " type="image/jpg" />
                             <img class="img" src="../img/mobil/m-projects-2.jpg" alt="project" loading="lazy" />
                         </picture>
                     </div>
                 </li>
-                <li class="project-item">
+                <li class="project-item swiper-slide" id="project-item">
                     <div class="left-side">
                         <ul class="tech-skills-list">
                             <li class="tech-skill-item">#react</li>
@@ -83,22 +83,23 @@
                                     ./img/tablet/t-project-3@2x.jpg 2x
                                     " type="image/jpg" />
                             <source media="(max-width:767px)" srcset="
-                                    ./img/mobil/m-projects-3.jpg 1x,
-                                    ./img/mobil/m-projects-3@2x.jpg 2x
+                                    ./img/mobil/m-project-3.jpg 1x,
+                                    ./img/mobil/m-project-3@2x.jpg 2x
                                     " type="image/jpg" />
                             <img class="img" src="./img/mobil/m-projects-3.jpg" alt="project" loading="lazy" />
                         </picture>
                     </div>
                 </li>
             </ul>
-            <div class="btn-div">
-                <button class="left-btn"><svg class="arrow-btn-sv" width="24" height="24px">
-                    <use href="./icons/sprite.svg#arrow-left"></use>
-                </svg></button>
-                <button class="right-btn"><svg class="arrow-btn-sv" width="24" height="24px">
-                    <use href="./icons/sprite.svg#arrow-right"></use>
-                </svg></button>
-            </div>
+        </div> 
+        <div class="btn-div" id="btn-div">
+            <button class="left-btn swiper-button-prev" id="left-btn"><svg class="arrow-btn-svg" id="rrow-btn-svg" width="24" height="24px">
+                <use href="./icons/sprite.svg#arrow-left"></use>
+            </svg></button>
+            <button class="right-btn swiper-button-next" id="right-btn"><svg class="arrow-btn-svg" width="24" height="24px">
+                <use href="./icons/sprite.svg#arrow-right"></use>
+            </svg></button>
         </div>
     </div>
 </section>
+
