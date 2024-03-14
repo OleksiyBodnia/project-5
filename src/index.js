@@ -1,20 +1,9 @@
-<<<<<<< Updated upstream
 import '/js/header';
 import '/js/hero';
 import '/js/about-me';
 import '/js/benefits';
 import '/js/projects';
 import '/js/faq';
+import '/js/reviews'
 import '/js/covers';
 import '/js/work-together';
-=======
-import './js/header';
-import './js/hero';
-import './js/about-me';
-import './js/benefits';
-import './js/projects';
-import './js/faq';
-import '/js/reviews'
-import './js/covers';
-import './js/work-together';
->>>>>>> Stashed changes
