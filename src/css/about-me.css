@@ -62,6 +62,9 @@
 
 .about-me-button-up,
 .about-me-button-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   content: '';
   top: 0;
@@ -125,7 +128,10 @@
   margin-bottom: 10px;
 }
 
-.about-me-wrapper {
+.about-me-skills-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 64px;
 }
 
@@ -158,9 +164,12 @@
 
 .about-me-skills-button {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  padding: 0;
+  border: none;
+  width: 28px;
+  height: 28px;
   border-color: transparent;
   text-align: center;
   background-color: #1c1d20;
@@ -169,8 +178,7 @@
 .about-me-skills-svg {
   width: 28px;
   height: 28px;
-  /* stroke: #3b3b3b; */
-  stroke: #1c1d20;
+  stroke: #3b3b3b;
 }
 
 @media screen and (min-width: 768px) {
@@ -215,7 +223,7 @@
     margin-bottom: 16px;
   }
 
-  .about-me-wrapper {
+  .about-me-skills-wrapper {
     margin-bottom: 96px;
   }
 
@@ -236,10 +244,9 @@
   }
 
   .about-me-skills-svg {
-    width: 28px;
-    height: 28px;
-    /* stroke: #3b3b3b; */
-    stroke: #1c1d20;
+    width: 40px;
+    height: 40px;
+    stroke: #3b3b3b;
   }
 }
 
@@ -271,26 +278,31 @@
     margin-bottom: 64px;
   }
 
-  .about-me-button-up,
-  .about-me-button-down {
-    width: 40px;
-    height: 40px;
-  }
-
   .about-me-button-down.is-hidden {
     display: none;
   }
 
-  .about-me-svg {
-    width: 20px;
-    height: 20px;
+  .about-me-outline {
+    margin-left: 696px;
+  }
+
+  .about-me-summary-description {
+    width: 612px;
   }
 
   .about-me-summary-indent {
     margin-bottom: 16px;
   }
 
-  .about-me-wrapper {
+  .about-me-education-list {
+    width: 465px;
+  }
+
+  .about-me-education-list-item:first-child {
+    width: 369px;
+  }
+
+  .about-me-skills-wrapper {
     margin-bottom: 96px;
   }
 
@@ -302,18 +314,5 @@
   .about-me-skills-item {
     width: 200px;
     height: 200px;
-  }
-
-  /* разобраться с кнопкой */
-  .about-me-skills-button {
-    width: 40px;
-    height: 40px;
-  }
-
-  .about-me-skills-svg {
-    width: 28px;
-    height: 28px;
-    /* stroke: #3b3b3b; */
-    stroke: #1c1d20;
   }
 }
