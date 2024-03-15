@@ -40,7 +40,7 @@
     border: 1px solid #FAFAFA33;
     padding: 32px 24px;
     border-radius: 20px;
-   margin: 0 auto;
+    width: 343px;
 }
 
 .img-reviews {
@@ -88,14 +88,12 @@
     padding-left:  0;
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
 }
 .btn-div{
     gap: 12px;
 }
  .reviews-item {
-    
-    max-width: 344px;
+    width: 344px;
 }
   }
   @media screen and (min-width: 1440px)  {
@@ -108,16 +106,15 @@
     .reviews-list {
         margin: 0 auto;
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
+        /* flex-wrap: nowrap; */
+        /* justify-content: center; */
         align-items: center;
-        gap: 16px;
         margin-bottom: 32px;
         
     }
 
     .reviews-item {
     
-        max-width: 332px;
+        width: 332px;
     }
 }
