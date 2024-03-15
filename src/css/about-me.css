@@ -74,10 +74,14 @@
   height: 36px;
   border-radius: 50%;
   border: 1px solid #fafafa66;
-  background-color: #1c1d20;
+  background-color: transparent;
 }
 
 .about-me-button-down.is-hidden {
+  display: none;
+}
+
+.about-me-button-up.is-hidden {
   display: none;
 }
 
@@ -113,6 +117,12 @@
   margin-bottom: 32px;
 }
 
+.about-me-expirience.ac {
+  border: none;
+  background-color: #1c1d20;
+  margin-top: 0;
+}
+
 .about-me-expirience-list-item,
 .about-me-education-list-item {
   font-size: 16px;
@@ -126,6 +136,12 @@
 .about-me-expirience-list-item:not(:last-child),
 .about-me-education-list-item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.about-me-education.ac {
+  border: none;
+  background-color: #1c1d20;
+  margin-top: 0;
 }
 
 .about-me-skills-wrapper {
@@ -185,6 +201,7 @@
   .about-me-bg-text {
     padding: 64px 64px 436px 64px;
     width: 704px;
+    height: 700px;
   }
 
   .about-me-text {
@@ -210,9 +227,13 @@
     height: 40px;
   }
 
-  .about-me-button-down.is-hidden {
+  /* .about-me-button-up.is-hidden {
+    width: 60px;
+  } */
+
+  /* .about-me-button-down.is-hidden {
     display: none;
-  }
+  } */
 
   .about-me-svg {
     width: 20px;
@@ -263,11 +284,13 @@
   }
 
   .about-me-foto {
+    margin-bottom: 0;
     border-radius: 24px;
+    height: 700px;
   }
 
-  .underline {
-    padding-bottom: 32px;
+  .underline:first-child {
+    margin-top: 96px;
   }
 
   .underline:not(:last-child) {
@@ -275,7 +298,7 @@
   }
 
   .underline:last-child {
-    margin-bottom: 64px;
+    margin-bottom: 96px;
   }
 
   .about-me-button-down.is-hidden {
