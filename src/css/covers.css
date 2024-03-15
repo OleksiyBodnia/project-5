@@ -14,10 +14,11 @@
 }
 
   .marquee {
-    
+    top: 0;
     position: absolute;
     right: -800px;
     left: 0;
+    bottom: 0;
     overflow: hidden;
     font-family: "Pridi", sans-serif;
     font-weight: 600;
