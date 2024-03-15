@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/project-5/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-5/assets/vendor-ee4902f9.js">
     <link rel="stylesheet" href="/project-5/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/project-5/assets/index-8684c2b1.css">
+    <link rel="stylesheet" href="/project-5/assets/index-23c3f8e2.css">
   </head>
   <body>
     <header class="header-section" id="header-section">
@@ -43,25 +43,18 @@
 
       <img
         class="about-me-foto"
-        srcset="
-          ../img/mobil/m-about-me-main-photo.jpg       343w,
-          ../img/tablet/t-about-me-main-photo.jpg      704w,
-          ../img/desktop/d-about-me-main-photo.jpg     680w,
-          ../img/mobil/m-about-me-main-photo@2x.jpg    686w,
-          ../img/tablet/t-about-me-main-photo@2x.jpg  1414w,
-          ../img/desktop/d-about-me-main-photo@2x.jpg 1360w
-        "
+        srcset="/project-5/assets/m-about-me-main-photo-6bd719dd.jpg 343w, /project-5/assets/t-about-me-main-photo-502cf8d8.jpg 704w, /project-5/assets/d-about-me-main-photo-2c2ada06.jpg 680w, /project-5/assets/m-about-me-main-photo@2x-f37bce07.jpg 686w, /project-5/assets/t-about-me-main-photo@2x-0d5d5cd8.jpg 1414w, /project-5/assets/d-about-me-main-photo@2x-9e85bd51.jpg 1360w"
         sizes="(max-width: 375px) 343px, (min-width: 768px) 704px, (min-width: 1440px) 680px"
-        src="../img/mobil/m-about-me-main-photo.jpg"
+        src="/project-5/assets/m-about-me-main-photo-6bd719dd.jpg"
         alt="my photo"
       />
     </div>
 
     <div>
       <ul>
-        <li class="about-me-summary underline flex-container">
+        <li class="about-me-summary underline">
           <h3 class="about-me-summary-title">About me</h3>
-          <div>
+          <div class="about-me-summary-description about-me-outline">
             <p class="about-me-summary-text about-me-summary-indent">
               I am Lloyd Jefferson, a talented programmer with extensive
               expertise in software development. I have an understanding of
@@ -87,36 +80,36 @@
 
           <button class="about-me-button-up" type="button">
             <svg class="about-me-svg">
-              <use href="../icons/sprite.svg#arrow-up"></use>
+              <use href="/project-5/assets/sprite-2db16f09.svg#arrow-up"></use>
             </svg>
           </button>
           <button class="about-me-button-down is-hidden">
             <svg class="about-me-svg">
-              <use href="../icons/sprite.svg#arrow-down"></use>
+              <use href="/project-5/assets/sprite-2db16f09.svg#arrow-down"></use>
             </svg>
           </button>
         </li>
         <li class="about-me-expirience underline">
           <h3 class="about-me-expirience-title">Role</h3>
-          <ul class="about-me-expirience-list visually-hidden">
+          <ul class="about-me-expirience-list about-me-outline">
             <li class="about-me-expirience-list-item">Frontend development</li>
             <li class="about-me-expirience-list-item">HeadlessCMS,Wordpress</li>
             <li class="about-me-expirience-list-item">Blender(enjoy)</li>
           </ul>
           <button class="about-me-button-up" type="button">
             <svg class="about-me-svg">
-              <use href="../icons/sprite.svg#arrow-up"></use>
+              <use href="/project-5/assets/sprite-2db16f09.svg#arrow-up"></use>
             </svg>
           </button>
           <button class="about-me-button-down">
             <svg class="about-me-svg">
-              <use href="../icons/sprite.svg#arrow-down"></use>
+              <use href="/project-5/assets/sprite-2db16f09.svg#arrow-down"></use>
             </svg>
           </button>
         </li>
         <li class="about-me-education underline">
           <h3 class="about-me-education-title">Education</h3>
-          <ul class="about-me-education-list visually-hidden">
+          <ul class="about-me-education-list about-me-outline">
             <li class="about-me-education-list-item">
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
               York
@@ -131,19 +124,19 @@
           </ul>
           <button class="about-me-button-up" type="button">
             <svg class="about-me-svg">
-              <use href="../icons/sprite.svg#arrow-up"></use>
+              <use href="/project-5/assets/sprite-2db16f09.svg#arrow-up"></use>
             </svg>
           </button>
           <button class="about-me-button-down">
             <svg class="about-me-svg">
-              <use href="../icons/sprite.svg#arrow-down"></use>
+              <use href="/project-5/assets/sprite-2db16f09.svg#arrow-down"></use>
             </svg>
           </button>
         </li>
       </ul>
     </div>
 
-    <div class="about-me-wrapper">
+    <div class="about-me-skills-wrapper">
       <ul class="about-me-skills">
         <li class="about-me-skills-item">HTML/CSS</li>
         <li class="about-me-skills-item">JavaScript</li>
@@ -155,7 +148,7 @@
 
       <button class="about-me-skills-button" type="button">
         <svg class="about-me-skills-svg">
-          <use href="../icons/sprite.svg#arrow-right"></use>
+          <use href="/project-5/assets/sprite-2db16f09.svg#arrow-right"></use>
         </svg>
       </button>
     </div>
@@ -168,83 +161,158 @@
     </div>
 </section>
       <section class="projects-section" id="projects-section">
-    <div class="projects container">
-        <h2 class="projest-main-header">Projects</h2>
-        <div class="swiper">
-            <ul class="projects-list  swiper-wrapper">
-                <li class="project-item swiper-slide" id="project-item">
-                    <div class="left-side">
-                        <ul class="tech-skills-list">
-                            <li class="tech-skill-item">#react</li>
-                            <li class="tech-skill-item">#js</li>
-                            <li class="tech-skill-item">#node js</li>
-                            <li class="tech-skill-item">#git</li>
-                        </ul>
-                        <h2 class="projest-header">Programming Across Borders: Ideas, Technologies, Innovations</h2>
-                        <a href="https://oleksiybodnia.github.io/project-5/" class="project-link" target="_blank">See project</a>
-                    </div>
-                    <div class="right-side">
-                        <picture class="project-img">
-                            <source media="(min-width:1440px)" srcset="/project-5/assets/d-project-1-5b300bbd.jpg 1x, /project-5/assets/d-project-1@2x-fa621f39.jpg 2x" type="image/jpg" />
-                            <source media="(min-width:768px)" srcset="/project-5/assets/m-project-1-17c7133d.jpg 1x, /project-5/assets/d-project-1@2x-fa621f39.jpg 2x" type="image/jpg" />
-                            <source media="(max-width:767px)" srcset="/project-5/assets/m-project-1-17c7133d.jpg 1x, /project-5/assets/m-project-1@2x-205f7e44.jpg 2x" type="image/jpg" />
-                            <img class="img" src="../img/mobil/m-projects-1.jpg" alt="project" loading="lazy" />
-                        </picture>
-                    </div>
-                </li> 
-                <li class="project-item swiper-slide" id="project-item">
-                    <div class="left-side">
-                        <ul class="tech-skills-list">
-                            <li class="tech-skill-item">#react</li>
-                            <li class="tech-skill-item">#js</li>
-                            <li class="tech-skill-item">#node js</li>
-                            <li class="tech-skill-item">#git</li>
-                        </ul>
-                        <h2 class="projest-header">Programming Across Borders: Ideas, Technologies, Innovations</h2>
-                        <a href="https://oleksiybodnia.github.io/project-5/" class="project-link" target="_blank">See project</a>
-                    </div>
-                    <div class="right-side">
-                        <picture class="project-img">
-                            <source media="(min-width:1440px)" srcset="/project-5/assets/d-project-2-447428a7.jpg 1x, /project-5/assets/d-project-2@2x-540eb4f9.jpg 2x" type="image/jpg" />
-                            <source media="(min-width:768px)" srcset="/project-5/assets/d-project-2-447428a7.jpg 1x, /project-5/assets/d-project-2@2x-540eb4f9.jpg 2x" type="image/jpg" />
-                            <source media="(max-width:767px)" srcset="/project-5/assets/m-project-2-e2d242fd.jpg 1x, /project-5/assets/m-project-2@2x-a2c63ec8.jpg 2x" type="image/jpg" />
-                            <img class="img" src="../img/mobil/m-projects-2.jpg" alt="project" loading="lazy" />
-                        </picture>
-                    </div>
-                </li>
-                <li class="project-item swiper-slide" id="project-item">
-                    <div class="left-side">
-                        <ul class="tech-skills-list">
-                            <li class="tech-skill-item">#react</li>
-                            <li class="tech-skill-item">#js</li>
-                            <li class="tech-skill-item">#node js</li>
-                            <li class="tech-skill-item">#git</li>
-                        </ul>
-                        <h2 class="projest-header">Programming Across Borders: Ideas, Technologies, Innovations</h2>
-                        <a href="https://oleksiybodnia.github.io/project-5/" class="project-link" target="_blank">See project</a>
-                    </div>
-                    <div class="right-side">
-                        <picture class="project-img">
-                            <source media="(min-width:1440px)" srcset="/project-5/assets/d-project-3-80826564.jpg 1x, /project-5/assets/d-project-3@2x-5096b595.jpg 2x" type="image/jpg" />
-                            <source media="(min-width:768px)" srcset="/project-5/assets/d-project-3-80826564.jpg 1x, /project-5/assets/d-project-3@2x-5096b595.jpg 2x" type="image/jpg" />
-                            <source media="(max-width:767px)" srcset="/project-5/assets/m-project-3-0d2dcbb5.jpg 1x, /project-5/assets/m-project-3@2x-44f5e64d.jpg 2x" type="image/jpg" />
-                            <img class="img" src="./img/mobil/m-projects-3.jpg" alt="project" loading="lazy" />
-                        </picture>
-                    </div>
-                </li>
+  <div class="projects container">
+    <h2 class="projest-main-header">Projects</h2>
+    <div class="swiper">
+      <ul class="projects-list swiper-wrapper">
+        <li class="project-item swiper-slide" id="project-item">
+          <div class="left-side">
+            <ul class="tech-skills-list">
+              <li class="tech-skill-item">#react</li>
+              <li class="tech-skill-item">#js</li>
+              <li class="tech-skill-item">#node js</li>
+              <li class="tech-skill-item">#git</li>
             </ul>
-        </div> 
-        <div class="btn-div" id="btn-div">
-            <button class="left-btn swiper-button-prev" id="left-btn"><svg class="arrow-btn-svg" id="rrow-btn-svg" width="24" height="24px">
-                <use href="/project-5/assets/sprite-2db16f09.svg#arrow-left"></use>
-            </svg></button>
-            <button class="right-btn swiper-button-next" id="right-btn"><svg class="arrow-btn-svg" width="24" height="24px">
-                <use href="/project-5/assets/sprite-2db16f09.svg#arrow-right"></use>
-            </svg></button>
-        </div>
+            <h2 class="projest-header">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h2>
+            <a
+              href="https://oleksiybodnia.github.io/project-5/"
+              class="project-link"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="right-side">
+            <picture class="project-img">
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-5/assets/d-project-1-5b300bbd.jpg 1x, /project-5/assets/d-project-1@2x-fa621f39.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-5/assets/m-project-1-17c7133d.jpg 1x, /project-5/assets/d-project-1@2x-fa621f39.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="/project-5/assets/m-project-1-17c7133d.jpg 1x, /project-5/assets/m-project-1@2x-205f7e44.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="img"
+                src="../img/mobil/m-projects-1.jpg"
+                alt="project"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="project-item swiper-slide" id="project-item">
+          <div class="left-side">
+            <ul class="tech-skills-list">
+              <li class="tech-skill-item">#react</li>
+              <li class="tech-skill-item">#js</li>
+              <li class="tech-skill-item">#node js</li>
+              <li class="tech-skill-item">#git</li>
+            </ul>
+            <h2 class="projest-header">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h2>
+            <a
+              href="https://oleksiybodnia.github.io/project-5/"
+              class="project-link"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="right-side">
+            <picture class="project-img">
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-5/assets/d-project-2-447428a7.jpg 1x, /project-5/assets/d-project-2@2x-540eb4f9.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-5/assets/d-project-2-447428a7.jpg 1x, /project-5/assets/d-project-2@2x-540eb4f9.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="/project-5/assets/m-project-2-e2d242fd.jpg 1x, /project-5/assets/m-project-2@2x-a2c63ec8.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="img"
+                src="../img/mobil/m-projects-2.jpg"
+                alt="project"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="project-item swiper-slide" id="project-item">
+          <div class="left-side">
+            <ul class="tech-skills-list">
+              <li class="tech-skill-item">#react</li>
+              <li class="tech-skill-item">#js</li>
+              <li class="tech-skill-item">#node js</li>
+              <li class="tech-skill-item">#git</li>
+            </ul>
+            <h2 class="projest-header">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h2>
+            <a
+              href="https://oleksiybodnia.github.io/project-5/"
+              class="project-link"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="right-side">
+            <picture class="project-img">
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-5/assets/d-project-3-80826564.jpg 1x, /project-5/assets/d-project-3@2x-5096b595.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-5/assets/d-project-3-80826564.jpg 1x, /project-5/assets/d-project-3@2x-5096b595.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="/project-5/assets/m-project-3-0d2dcbb5.jpg 1x, /project-5/assets/m-project-3@2x-44f5e64d.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="img"
+                src="./img/mobil/m-projects-3.jpg"
+                alt="project"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
     </div>
+    <div class="btn-div" id="btn-div">
+      <button class="left-btn swiper-button-prev" id="left-btn">
+        <svg class="arrow-btn-svg" id="rrow-btn-svg" width="24" height="24px">
+          <use href="/project-5/assets/sprite-2db16f09.svg#arrow-left"></use>
+        </svg>
+      </button>
+      <button class="right-btn swiper-button-next" id="right-btn">
+        <svg class="arrow-btn-svg" width="24" height="24px">
+          <use href="/project-5/assets/sprite-2db16f09.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
-
 
       <section class="faq-section" id="faq-section">
   <div class="faq-container">
