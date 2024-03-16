@@ -1,0 +1,123 @@
+/*======= MOBILE STYLES HERO   ============*/
+.hero {
+  height: 812px;
+  background: linear-gradient(
+    90deg,
+    #1c1d20 49.69%,
+    #69292d 67.71%,
+    #ed3b44 99.91%
+  );
+  background-image: url(../img/mobil/bg/m-hero-glass.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppi) and (min-width: 320px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+  .hero-section {
+    background-image: url(../img/mobil/bg/m-hero-glass@2x.png);
+  }
+}
+
+.main-title {
+  width: 343px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  padding-top: 281px;
+}
+
+.hero-contact {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+.contact-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-left: auto;
+}
+.social-icon {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  height: 37px;
+  width: 37px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.hero-e-mail {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  text-align: center;
+  padding: 10px 12px;
+}
+
+/*======= TABLET STYLES HERO   ============*/
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 1024px;
+
+    background-image: url(../img/tablet/bg/t-hero-glass.png);
+  }
+  .main-title {
+    width: 632px;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    padding-top: 300px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppi) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+      90deg,
+      #1c1d20 49.69%,
+      #69292d 67.71%,
+      #ed3b44 99.91%
+    );
+    background-image: url(../img/tablet/bg/t-hero-glass@2x.png);
+  }
+}
+
+/*======= DESCTOP STYLES HERO   ============*/
+@media screen and (min-width: 1440px) {
+  .hero {
+    height: 900px;
+    background-image: url(../img/desktop/bg/d-hero-glass.png);
+  }
+
+  .main-title {
+    width: 1084px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppi) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .hero {
+    background-image: url(../img/desktop/bg/d-hero-glass@2x.png);
+  }
+}
