@@ -1,6 +1,41 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+
+const swiper = new Swiper('.swiper-about', {
+  direction: 'horizontal',
+  loop: true,
+  speed: 500,
+
+  navigation: {
+    nextEl: '.about-me-skills-button',
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 6,
+    },
+  },
+
+  keyboard: {
+    enabled: true,
+  },
+  //   grabCursor: true,
+  //   simulateTouch: true,
+});
+
 const accordion = new Accordion('.accordion-container', {});
 accordion.open(1);
 
