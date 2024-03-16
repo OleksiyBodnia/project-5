@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/project-5/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-5/assets/vendor-b560a502.js">
     <link rel="stylesheet" href="/project-5/assets/vendor-d5231366.css">
-    <link rel="stylesheet" href="/project-5/assets/index-e7394a60.css">
+    <link rel="stylesheet" href="/project-5/assets/index-f97406af.css">
   </head>
   <body>
     <header class="header-section" id="header-section">
@@ -168,17 +168,21 @@
       </ul>
     </div>
 
-    <div class="about-me-skills-wrapper">
-      <ul class="about-me-skills">
-        <li class="about-me-skills-item">HTML/CSS</li>
-        <li class="about-me-skills-item">JavaScript</li>
-        <li class="about-me-skills-item">React</li>
-        <li class="about-me-skills-item">Node. js</li>
-        <li class="about-me-skills-item">React Native</li>
-        <li class="about-me-skills-item">Soft skills</li>
+    <div class="about-me-skills-wrapper swiper swiper-about">
+      <ul class="about-me-skills swiper-wrapper" id="about-me-skills">
+        <li class="about-me-skills-item swiper-slide">HTML/CSS</li>
+        <li class="about-me-skills-item swiper-slide">JavaScript</li>
+        <li class="about-me-skills-item swiper-slide">React</li>
+        <li class="about-me-skills-item swiper-slide">Node. js</li>
+        <li class="about-me-skills-item swiper-slide">React Native</li>
+        <li class="about-me-skills-item swiper-slide">Soft skills</li>
       </ul>
 
-      <button class="about-me-skills-button" type="button">
+      <button
+        class="about-me-skills-button swiper-button-next"
+        id="about-me-skills-button"
+        type="button"
+      >
         <svg class="about-me-skills-svg">
           <use href="/project-5/assets/sprite-2db16f09.svg#arrow-right"></use>
         </svg>
