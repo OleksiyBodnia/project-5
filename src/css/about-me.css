@@ -151,9 +151,8 @@
   margin-bottom: 64px;
 }
 
-.about-me-skills {
+#about-me-skills {
   display: flex;
-  flex-wrap: wrap;
 
   font-size: 16px;
   font-weight: 500;
@@ -178,7 +177,9 @@
   background-color: #ed3b44;
 }
 
-.about-me-skills-button {
+#about-me-skills-button {
+  /* position: relative;
+  z-index: 999; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +189,12 @@
   height: 28px;
   border-color: transparent;
   text-align: center;
+
   background-color: #1c1d20;
+}
+
+.swiper-button-next::after {
+  display: none;
 }
 
 .about-me-skills-svg {
