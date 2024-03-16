@@ -1,6 +1,7 @@
-.covers-section {
 
-  width: 375px;
+.covers {
+
+    width: 375px;
     background-image: 
     url(../img/mobil/bg/m-covers.png);
     background-repeat: no-repeat;
@@ -12,7 +13,7 @@
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppi) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
-  .covers-section {
+  .covers{
     background-image: url(../img/mobil/bg/m-covers@2x.png);
   }
 }
@@ -20,13 +21,15 @@
 @media screen and (min-width: 375px) {
   .covers-section {
 
-      width: 375px;
+      
       position: relative;
       margin: 0 auto;
-      margin-bottom: 64px;
+      padding-bottom: 64px;
       
   }
   .covers{
+    background-image: 
+    url(../img/mobil/bg/m-covers.png);
     padding-bottom: 0;
     width: 375px;
     height: 497px;
@@ -44,9 +47,8 @@
     .marquee__inner {
        display: flex;
        transform: rotate(16deg);
-       /* margin-bottom: 200px; */
-       column-gap: 40px;
-       margin-bottom: 40px;
+       gap: 30px;
+       margin-bottom: 30px;
        height: 162px;
     }
     
@@ -63,35 +65,33 @@
     }
 }
 @media screen and (min-width: 768px) {
+  .covers-section {
+    padding-bottom: 96px;
+  }
   .covers-img{
     height: 314px;
   }
-  .covers-section {
+  .covers {
     width: 768px;
-    margin-bottom: 96px;
+    height: 960px;
+    
     background-image: 
     url(../img/tablet/bg/t-covers.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     margin: 0 auto;
-    margin-bottom: 64px;
+    
       
   }
-  .covers{
-    width: 768px;
-    height: 960px;
-  }
-  
-  
-    .marquee {
+      .marquee {
       top: 300px;
       left: -100px;
     }
     
     .marquee__inner {
-       column-gap: 70px;
-      margin-bottom: 70px;
+       gap: 50px;
+       margin-bottom: 46px;
        height: 314px;
     }
     
@@ -102,7 +102,7 @@
     @media screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppi) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .covers-section {
+  .covers {
     background-image: url(../img/tablet/bg/t-covers@2x.png);
   }
     
@@ -111,46 +111,42 @@
 
   @media screen and (min-width: 1440px) {
     .covers-section {
+        
+       padding-bottom: 164px; 
+    }
+    .covers {
       width: 1440px;
         position: relative;
         background-image: 
-        url('../img/desktop/bg/d-covers.png');
+        url(../img/desktop/bg/d-covers.png);
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: cover;
-    
         margin: 0 auto;
-        
     }
     @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
   screen and (min-resolution: 2dppi) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .covers-section {
-    background-image: url(../img/desktop/bg/d-covers@2x.png);
-  }
-}
-    .covers{
-      padding-bottom: 0;
+  .covers {
+    padding-bottom: 0;
       width: 1440px;
       height: 960px;
       overflow: hidden;
       position: relative;
+      background-image: url(../img/desktop/bg/d-covers@2x.png);
+  }
+}
+   .marquee {
+     position: absolute;
+     top: 300px;
+     left: -100px;
     }
-    
-    
-      .marquee {
-        
-        position: absolute;
-        top: 300px;
-        left: -100px;
-      }
       
       .marquee__inner {
          display: flex;
          transform: rotate(16deg);
-         /* margin-bottom: 200px; */
-         column-gap: 75px;
-          margin-bottom: 75px;
+         gap: 45px;
+         margin-bottom: 50px;
          height: 314px;
       }
       
