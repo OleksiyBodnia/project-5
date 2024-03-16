@@ -33,8 +33,9 @@
 
   .marquee {
     top: 0;
+    bottom: 0;
     position: absolute;
-    right: -800px;
+   
     left: -800px;
     overflow: hidden;
     font-weight: 600;
@@ -60,17 +61,17 @@
     white-space: nowrap;
     animation-name: marqueeLine;
     animation-duration: 5s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
   
   @keyframes marqueeLine {
     from {
-      transform: translateX(-20%);
+      transform: translateX(0);
     }
     
     to {
-      transform: translateX(-180%);
+      transform: translateX(-50%);
     }
   }
   
