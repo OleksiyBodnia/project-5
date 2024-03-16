@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/project-5/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-5/assets/vendor-b560a502.js">
     <link rel="stylesheet" href="/project-5/assets/vendor-d5231366.css">
-    <link rel="stylesheet" href="/project-5/assets/index-6ceacd94.css">
+    <link rel="stylesheet" href="/project-5/assets/index-1623dabd.css">
   </head>
   <body>
     <header class="header-section" id="header-section">
@@ -887,40 +887,50 @@
     <div class="work-together container">
 <!-- шапка розділу з іконкою та закликом -->
         <h2 class="work-together-header">
-        <picture class="work-together-owner-photo">
-                            <source media="(min-width:1440px)" srcset="
-                                    ../img/desktop/d-work-together-icon.jpg 1x,
-                                    ../img/desktop/d-work-together-icon@2x.jpg 2x
-                                    " type="image/jpg" />
-                            <source media="(min-width:768px)" srcset="
-                                    ../img/tablet/t-work-together-icon.jpg 1x,
-                                    ../img/tablet/t-work-together-icon@2x.jpg 2x
-                                    " type="image/jpg" />
-                            <source media="(max-width:767px)" srcset="
-                                    ../img/mobil/m-work-together-icon.jpg 1x,
-                                    ../img/mobil/m-work-together-icon@2x.jpg 2x
-                                    " type="image/jpg" />
-                            <img class="work-together-logo-img" src="../img/mobil/m-work-together-icon.jpg" alt="Owner's portfolio photo"/>
-                        </picture>
-        Let’s <span class="span-highlight">work</span> together
+            <ul class="work-together-list-of-header">
+                <li class="work-together-first-line-of-header">
+                    <picture class="work-together-owner-photo">
+                        <source media="(min-width:1440px)" srcset="
+                                                        ../img/desktop/d-work-together-icon.jpg 1x,
+                                                        ../img/desktop/d-work-together-icon@2x.jpg 2x
+                                                        " type="image/jpg" />
+                        <source media="(min-width:768px)" srcset="
+                                                        ../img/tablet/t-work-together-icon.jpg 1x,
+                                                        ../img/tablet/t-work-together-icon@2x.jpg 2x
+                                                        " type="image/jpg" />
+                        <source media="(max-width:767px)" srcset="
+                                                        ../img/mobil/m-work-together-icon.jpg 1x,
+                                                        ../img/mobil/m-work-together-icon@2x.jpg 2x
+                                                        " type="image/jpg" />
+                        <img class="work-together-logo-img" src="../img/mobil/m-work-together-icon.jpg" alt="Owner's portfolio photo" />
+                    </picture>
+                    Let’s <span class="span-highlight"> work </span>
+                </li>
+                <li>together</li>
+            </ul>
         </h2>
 <!-- форма зв'язку -->
         <form class="work-together-subscribe">
-            <input class="work-together-input-email" 
-                type="email" 
-                name="email" 
-                id="email" 
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" 
-                required 
-                placeholder="clients@gmail.com">
-            <textarea class="work-together-comments" 
-                name="comments" 
-                id="comments" 
-                cols="30" 
-                rows="1" 
-                required 
-                placeholder="comments"></textarea>
-            <button class="work-together-btn" type="submit">Send</button>
+            <ul class="work-together-list-in-form">
+                <li class="work-together-item-of-form">
+                    <input class="work-together-input-email" 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" 
+                        placeholder="clients@gmail.com"
+                        required>
+                    <textarea class="work-together-comments" 
+                        name="comments" 
+                        id="comments" 
+                        rows="1"
+                        placeholder="comments"
+                        required></textarea>
+                </li>
+                <li class="work-together-item-of-form">
+                    <button class="work-together-btn" type="submit">Send</button>
+                </li>
+            </ul>
         </form>
 <!-- контактні лінки - пошта і телефон -->
         <address class="work-together-contact">
@@ -937,7 +947,8 @@
             work-together-backdrop-desktop 
             work-together-backdrop-mobile 
             work-together-backdrop-laptop
-            visually-hidden">
+            visually-hidden
+            ">
         <!-- хрестик який просить - закрий мене - кнопка-закривашка-->
         <button class="work-together-modal-close-x-btn" type="button">
             <svg class="work-together-modal-close-x-svg" width="22" height="22" aria-label="modal close button">
@@ -945,7 +956,7 @@
             </svg>
         </button>
         <!-- заголовок модального вікна -->
-        <h3 class="work-together-modal-head-text">Leave your contacts and we will call you back</h3>
+        <h3 class="work-together-modal-head-text">Thank you for your interest in cooperation!</h3>
         <p class="work-together-invitation">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
 </div>
     </main>
