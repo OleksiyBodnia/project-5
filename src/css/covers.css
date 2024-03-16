@@ -1,15 +1,33 @@
+@media screen and (min-width: 375px){
+    .covers-section{
+      padding-top: 96px;
+      padding-bottom: 96px;
+      margin-top: 96px;
+      margin-bottom: 96px;
+    }
+    
+  }
+  @media screen and (min-width: 1440px){
+    .covers-section{
+      padding-top: 164px;
+      padding-bottom: 164px;
+     
+    }
+  }
 .covers-section {
-    padding-top: 64px;
-    padding-bottom: 200px;
-    position: relative;
-    background-image: 
+  
+ background-image: 
     url('../img/desktop/bg/d-covers.png'),
     url('../img/desktop/bg/d-covers@2x.png'); 
-    background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-
-  margin: 0 auto;
+    background-repeat: no-repeat;  
+    background-position: 50% 50%;
+    background-size: cover;
+ position: relative;
+  }
+.content {
+    
+    margin-top: 64px;
+    margin-bottom: 200px;
     
 }
 
@@ -17,31 +35,28 @@
     top: 0;
     position: absolute;
     right: -800px;
-    left: 0;
-    bottom: 0;
+    left: -800px;
     overflow: hidden;
-    font-family: "Pridi", sans-serif;
     font-weight: 600;
     font-size: 34px;
-    text-transform: uppercase;
+    
   }
   
   .marquee__inner {
-    
-    
+       
      display: flex;
      transform: rotate(16deg);
      margin-bottom: 20px;
   }
   
   .marquee__line {
-    
-    
+       
     margin-right: 10px; 
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(100% / 10); 
+    height: auto;
     white-space: nowrap;
     animation-name: marqueeLine;
     animation-duration: 5s;
@@ -58,9 +73,5 @@
       transform: translateX(-180%);
     }
   }
-  @media screen and (min-width: 375px){
-    .marquee__inner {
-        
-        max-height: 162px;
-    }
-  }
+  
+  
