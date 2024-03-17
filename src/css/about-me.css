@@ -45,8 +45,8 @@
   margin-bottom: 32px;
   border-radius: 24px;
 }
-
-.underline {
+/* ========================ACCORDION=============== */
+.accordion-container-about .underline {
   position: relative;
   padding-bottom: 20px;
   border-bottom: 1px solid #fafafa66;
@@ -62,7 +62,9 @@
 
 .accordion-container-about .ac {
   margin-top: 0;
-  border: none;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
   background-color: transparent;
 }
 
@@ -126,12 +128,6 @@
   margin-bottom: 32px;
 }
 
-.about-me-expirience.ac {
-  border: none;
-  background-color: #1c1d20;
-  margin-top: 0;
-}
-
 .about-me-expirience-list-item,
 .about-me-education-list-item {
   font-size: 16px;
@@ -147,23 +143,24 @@
   margin-bottom: 10px;
 }
 
-.about-me-education.ac {
-  border: none;
-  background-color: #1c1d20;
-  margin-top: 0;
-}
-
-#about-me-skills-wrapper {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+/* ======================SWIPER=================== */
+.about-me-skills-wrapper {
+  position: relative;
   margin-bottom: 64px;
 }
 
-#about-me-skills {
-  /* display: flex; */
-  width: 260px;
+.swiper-slide.active-slide {
+  background-color: #ed3b44;
+  border: none;
+}
 
+.about-me-skills-wrapper .swiper {
+  margin-left: 0;
+  margin-right: 0;
+  width: 260px;
+}
+
+.about-me-skills {
   font-size: 16px;
   font-weight: 500;
   line-height: calc(24 / 16);
@@ -188,8 +185,6 @@
 }
 
 #about-me-skills-button {
-  /* position: relative;
-  z-index: 999; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,6 +220,7 @@
     line-height: calc(40 / 38);
   }
 
+  /* ================ACCORDION================ */
   .underline {
     padding-bottom: 32px;
   }
@@ -243,14 +239,6 @@
     height: 40px;
   }
 
-  /* .about-me-button-up.is-hidden {
-    width: 60px;
-  } */
-
-  /* .about-me-button-down.is-hidden {
-    display: none;
-  } */
-
   .about-me-svg {
     width: 20px;
     height: 20px;
@@ -260,22 +248,26 @@
     margin-bottom: 16px;
   }
 
+  /* ====================SWIPER============== */
   .about-me-skills-wrapper {
     margin-bottom: 96px;
   }
 
-  #about-me-skills {
+  .about-me-skills-wrapper .swiper {
+    margin-left: 0;
     width: 600px;
+  }
+
+  .about-me-skills {
     font-size: 20px;
     line-height: calc(24.2 / 20);
   }
 
-  .about-me-skills-item {
+  .about-me-skills > .about-me-skills-item {
     width: 200px;
     height: 200px;
   }
 
-  /* разобраться с кнопкой */
   .about-me-skills-button {
     width: 40px;
     height: 40px;
@@ -318,10 +310,6 @@
     margin-bottom: 96px;
   }
 
-  .about-me-button-down.is-hidden {
-    display: none;
-  }
-
   .about-me-outline {
     margin-left: 696px;
   }
@@ -342,17 +330,22 @@
     width: 369px;
   }
 
+  /* ======================SWIPER=================== */
   .about-me-skills-wrapper {
     margin-bottom: 96px;
   }
 
-  #about-me-skills {
+  .about-me-skills-wrapper .swiper {
+    margin-left: 0;
     width: 1200px;
+  }
+
+  .about-me-skills {
     font-size: 20px;
     line-height: calc(24.2 / 20);
   }
 
-  .about-me-skills-item {
+  .about-me-skills > .about-me-skills-item {
     width: 200px;
     height: 200px;
   }
