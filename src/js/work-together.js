@@ -6,6 +6,7 @@ const contactComment = document.querySelector(".work-together-comments");
 const contactForm = document.querySelector(".work-together-subscribe");
 const label = document.querySelector(".label-input-email");
 const modalBackdrop = document.querySelector(".work-together-backdrop");
+const modalBackdropBg = document.querySelector(".modal-backdrop-bg");
 const modalTitle = document.querySelector(".work-together-modal-head-text");
 const modalText = document.querySelector(".work-together-invitation");
 const modalBtn = document.querySelector(".work-together-modal-close-x-btn");
@@ -54,9 +55,11 @@ function getContactInfo(event) {
             return response.json();
         })
         .then(data => {
-            // із запитом все ок - відкриваємо модалку із привітанням що скоро зв'яжемось
+            // із запитом все ок - відкриваємо модалку із привітанням що скоро зв'яжемось,
+            // ставимо затемнялку на всю сторінку за модальним вікном
             modalBackdrop.classList.remove("visually-hidden");
             modalBackdrop.style.display = 'block';
+            modalBackdropBg.classList.remove("visually-hidden");
             // в повідомлення на модалці вставляємо відповідь з сервера 
             modalTitle.textContent = data.title;
             modalText.textContent = data.message;
@@ -135,8 +138,9 @@ document.addEventListener("keydown", event => {
     }
 });
 
-// функція закриття модального вікна, ховає його і прописує невидимість
+// функція закриття модального вікна, ховає його? прописує невидимість, прибирає затемнялку зі сторінки
 function closeModal() {
     modalBackdrop.classList.add("visually-hidden");
     modalBackdrop.style.display = 'none';
+    modalBackdropBg.classList.add("visually-hidden");
 }
