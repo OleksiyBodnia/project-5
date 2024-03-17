@@ -7,7 +7,7 @@ import 'swiper/css/bundle';
 const swiperAbout = new Swiper('.swiper-about', {
   direction: 'horizontal',
   loop: true,
-  speed: 500,
+  speed: 750,
 
   navigation: {
     nextEl: '.about-me-skills-button',
@@ -33,9 +33,40 @@ const swiperAbout = new Swiper('.swiper-about', {
     enabled: true,
   },
 
-  //   grabCursor: true,
-  //   simulateTouch: true,
+  grabCursor: true,
+  simulateTouch: true,
+
+  on: {
+    init: function () {
+      const activeIndex = this.activeIndex;
+      this.slides.forEach((slide, index) => {
+        if (index === activeIndex) {
+          slide[index].classList.remove('active-slide');
+          slide[index + 1].classList.add('active-slide');
+        } else {
+          slide.classList.remove('active-slide');
+        }
+      });
+    },
+  },
+
+  slideChange: function () {
+    const activeIndex = this.activeIndex;
+    this.slides.forEach((slide, index) => {
+      if (index === activeIndex) {
+        slide[index].classList.remove('active-slide');
+        slide[index + 1].classList.add('active-slide');
+      } else {
+        slide.classList.remove('active-slide');
+      }
+    });
+  },
 });
 
-const accordionAbout = new Accordion('.accordion-container-about');
-accordion.open(0);
+swiperAbout.update();
+
+const accordionAbout = new Accordion('.accordion-container-about', {
+  duration: 700,
+  showMultiple: true,
+});
+accordionAbout.open(0);
