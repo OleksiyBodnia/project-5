@@ -35,7 +35,7 @@
                         type="email" 
                         name="email" 
                         id="email"
-                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" 
+                        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" 
                         placeholder="clients@gmail.com"
                         autocomplete="off"
                         required>
@@ -67,20 +67,22 @@
                 <li class="work-together-menu-link"><a class="work-together-link" href="tel:+3801111111111">+380 11 1111 11 11</a></li>
             </ul>
         </address>
-    </div>
 
-    <!-- модальне вікно після відправки е-мейлу і коментаря -->
-    <div class="work-together-backdrop
-                visually-hidden">
-        <!-- хрестик який просить - закрий мене - кнопка-закривашка-->
-        <button class="work-together-modal-close-x-btn" type="button">
-            <svg class="work-together-modal-close-x-svg" width="22" height="22" aria-label="modal close button">
-                <use href="../icons/sprite.svg#x"></use>
-            </svg>
-        </button>
-        <!-- заголовок модального вікна -->
-        <h3 class="work-together-modal-head-text" name="title"></h3>
-        <!-- текст модального вікна -->
-        <p class="work-together-invitation" name="message"></p>
+        <!-- модальне вікно після відправки е-мейлу і коментаря -->
+        <div class="work-together-backdrop
+                        visually-hidden">
+            <!-- хрестик який просить - закрий мене - кнопка-закривашка-->
+            <button class="work-together-modal-close-x-btn" type="button">
+                <svg class="work-together-modal-close-x-svg" width="22" height="22" aria-label="modal close button">
+                    <use href="../icons/sprite.svg#x"></use>
+                </svg>
+            </button>
+            <!-- заголовок модального вікна -->
+            <h3 class="work-together-modal-head-text" name="title"></h3>
+            <!-- текст модального вікна -->
+            <p class="work-together-invitation" name="message"></p>
+        </div>
+        <!-- затемнялка фону за модальним вікном -->
+        <div class="modal-backdrop-bg visually-hidden"></div>
     </div>
 </section>
