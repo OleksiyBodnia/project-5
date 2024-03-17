@@ -64,25 +64,6 @@ async function fetchReviews() {
   }
 }
 
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-function handleScroll() {
-  if (isElementInViewport(reviemList)) {
-    fetchReviews();
-    window.removeEventListener('scroll', handleScroll);
-  }
-}
-
-window.addEventListener('scroll', handleScroll);
-
 const renderReviews = (data) => {
   data.forEach(element => {
     const markup = `<li class="reviews-item swiper-slide">
@@ -93,3 +74,5 @@ const renderReviews = (data) => {
     reviemList.insertAdjacentHTML('beforeend', markup);
   });
 }
+
+fetchReviews();
