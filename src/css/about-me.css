@@ -60,39 +60,48 @@
   margin-bottom: 32px;
 }
 
-.about-me-button-up,
-.about-me-button-down {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  content: '';
-  top: 0;
-  right: 0;
-
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid #fafafa66;
+.accordion-container-about .ac {
+  margin-top: 0;
+  border: none;
   background-color: transparent;
 }
 
-.about-me-button-down.is-hidden {
+.accordion-container-about .ac .ac-trigger {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  border: 1px solid #fafafa66;
+}
+.accordion-container-about > .ac .ac-trigger::after {
   display: none;
 }
 
-.about-me-button-up.is-hidden {
-  display: none;
+.accordion-container-about .ac .ac-trigger {
+  padding: 0;
+}
+
+.is-active .about-me-svg {
+  transform: rotate(180deg);
 }
 
 .about-me-svg {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
   width: 18px;
   height: 18px;
 }
 
-.about-me-summary-title,
+.about-me-summary .about-me-summary-title,
 .about-me-expirience-title,
 .about-me-education-title {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 24px;
 
   font-size: 16px;
@@ -104,7 +113,7 @@
   color: #fafafa66;
 }
 
-.about-me-summary-text {
+.about-me-summary-description {
   font-size: 16px;
   font-weight: 500;
   line-height: calc(24 / 16);
