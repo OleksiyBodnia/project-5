@@ -13,9 +13,9 @@ faqButtons.forEach(button => {
         const useElement = button.querySelector('use');
         const currentHref = useElement.getAttribute('href');
         if (currentHref === './icons/sprite.svg#arrow-down') {
-            useElement.setAttribute('href', '../icons/sprite.svg#arrow-up');
+            useElement.setAttribute('href', './icons/sprite.svg#arrow-up');
         } else {
-            useElement.setAttribute('href', '../icons/sprite.svg#arrow-down');
+            useElement.setAttribute('href', './icons/sprite.svg#arrow-down');
         }
 
     })
