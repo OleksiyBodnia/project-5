@@ -1,13 +1,7 @@
 /*======= MOBILE STYLES HERO   ============*/
-.hero {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: space-between; /* Выравнивание содержимого внизу */
-  height: 812px;
-
+#hero-section {
   background: linear-gradient(
-    90deg,
+    270deg,
     #1c1d20 49.69%,
     #69292d 67.71%,
     #ed3b44 99.91%
@@ -15,25 +9,34 @@
   background-image: url(../img/mobil/bg/m-hero-glass.png);
   background-repeat: no-repeat;
   background-position: left;
+  background-size: auto;
 }
-
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppi) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
-  .hero-section {
+  #hero-section {
     background-image: url(../img/mobil/bg/m-hero-glass@2x.png);
   }
 }
+.hero {
+  padding-top: 281px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 212px;
+}
 
 .main-title {
-  max-width: 343px;
+  width: 343px;
   font-size: 50px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
-  margin-top: 281px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-contact {
@@ -41,9 +44,6 @@
   flex-direction: row;
   gap: 4px;
   align-items: center;
-  
-  margin-bottom: 32px;
-  margin-right: 17px;
 }
 .contact-icon {
   display: flex;
@@ -68,7 +68,7 @@
 .social-icon:hover {
   background-color: #69292d;
   box-shadow: 0 0 5px #69292d;
- }
+}
 .hero-e-mail {
   font-style: normal;
   font-size: 14px;
@@ -79,19 +79,25 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   text-align: center;
   padding: 10px 12px;
-
+  height: 37px;
+  width: 178px;
 }
-.hero-e-mail:hover{
-    background-color: #69292d;
+.hero-e-mail:hover {
+  background-color: #69292d;
   box-shadow: 0 0 5px #69292d;
 }
 
 /*======= TABLET STYLES HERO   ============*/
 @media screen and (min-width: 768px) {
+  #hero-section {
+    background-image: url(../img/tablet/bg/t-hero-glass.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto;
+  }
   .hero {
     height: 1024px;
-
-    background-image: url(../img/tablet/bg/t-hero-glass.png);
+    padding-top: 300px;
   }
   .main-title {
     width: 632px;
@@ -101,43 +107,53 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #fafafa;
-    margin-top: 300px;
   }
-  .hero-contact {
-    margin-right: 32px;
-  }
+ 
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppi) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .hero {
-    background: linear-gradient(
-      90deg,
-      #1c1d20 49.69%,
-      #69292d 67.71%,
-      #ed3b44 99.91%
-    );
-    background-image: url(../img/tablet/bg/t-hero-glass@2x.png);
+  #hero-section {
+    background-image: linear-gradient(
+        270deg,
+        #1c1d20 49.69%,
+        #69292d 67.71%,
+        #ed3b44 99.91%
+      ),
+      url(../img/tablet/bg/t-hero-glass@2x.png);
   }
 }
 
 /*======= DESCTOP STYLES HERO   ============*/
 @media screen and (min-width: 1440px) {
+  #hero-section {
+    background-image: url(../img/desktop/bg/d-hero-glass.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto;
+  }
+
   .hero {
     height: 900px;
-    background-image: url(../img/desktop/bg/d-hero-glass.png);
   }
 
   .main-title {
     width: 1084px;
   }
+ 
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
   screen and (min-resolution: 2dppi) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .hero {
-    background-image: url(../img/desktop/bg/d-hero-glass@2x.png);
+  #hero-section {
+    background-image: linear-gradient(
+        270deg,
+        #1c1d20 49.69%,
+        #69292d 67.71%,
+        #ed3b44 99.91%
+      ),
+      url(../img/desktop/bg/d-hero-glass@2x.png);
   }
 }

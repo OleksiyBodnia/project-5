@@ -62,9 +62,7 @@ const swiperAbout = new Swiper('.swiper-about', {
     });
   },
 });
-
 swiperAbout.update();
-
 const accordionAbout = new Accordion('.accordion-container-about', {
   duration: 700,
   showMultiple: true,

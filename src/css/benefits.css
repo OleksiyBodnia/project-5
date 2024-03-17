@@ -163,7 +163,15 @@
     
 }
 
-.benefits-button:hover,
 .benefits-button:focus {
     border: 1px solid #FAFAFA;
+}
+
+.benefits-button:hover {
+    background-color: #69292d;
+    box-shadow: 0 0 5px #69292d;
+}
+
+.benefits-list-item:hover {
+    box-shadow: 0 0 5px #69292d, inset 0 0 10px #69292d;
 }
