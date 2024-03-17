@@ -144,15 +144,16 @@
   margin-top: 0;
 }
 
-.about-me-skills-wrapper {
-  display: flex;
+#about-me-skills-wrapper {
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   margin-bottom: 64px;
 }
 
 #about-me-skills {
-  display: flex;
+  /* display: flex; */
+  width: 260px;
 
   font-size: 16px;
   font-weight: 500;
@@ -163,7 +164,7 @@
   color: #fafafa;
 }
 
-.about-me-skills-item {
+.about-me-skills > .about-me-skills-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,7 +255,8 @@
     margin-bottom: 96px;
   }
 
-  .about-me-skills {
+  #about-me-skills {
+    width: 600px;
     font-size: 20px;
     line-height: calc(24.2 / 20);
   }
@@ -335,7 +337,8 @@
     margin-bottom: 96px;
   }
 
-  .about-me-skills {
+  #about-me-skills {
+    width: 1200px;
     font-size: 20px;
     line-height: calc(24.2 / 20);
   }

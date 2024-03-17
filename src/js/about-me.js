@@ -4,7 +4,7 @@ import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const swiper = new Swiper('.swiper-about', {
+const swiperAbout = new Swiper('.swiper-about', {
   direction: 'horizontal',
   loop: true,
   speed: 500,
@@ -19,12 +19,12 @@ const swiper = new Swiper('.swiper-about', {
       slidesPerView: 2,
       spaceBetween: 0,
     },
-    // when window width is >= 480px
-    480: {
+    // when window width is >= 678px
+    678: {
       slidesPerView: 3,
     },
-    // when window width is >= 640px
-    640: {
+    // when window width is >= 1440px
+    1440: {
       slidesPerView: 6,
     },
   },
@@ -32,6 +32,7 @@ const swiper = new Swiper('.swiper-about', {
   keyboard: {
     enabled: true,
   },
+
   //   grabCursor: true,
   //   simulateTouch: true,
 });
