@@ -6,33 +6,36 @@ import 'accordion-js/dist/accordion.min.css';
 
 // ================SWIPER=================
 
-const slideContainer = document.querySelector('.container');
-
-function countSkillsPerView() {
-  const containerWidth = slideContainer.clientWidth;
-  if (containerWidth === 375) {
-    return 2;
-  } else if (containerWidth === 768) {
-    return 3;
-  } else if (containerWidth === 1440) {
-    return 6;
-  }
-}
-
-const swiperAbout = new Swiper('.swiper3', {
-  slidesPerView: countSkillsPerView(),
+const swiperAbout = new Swiper('.swiper-about', {
   loop: true,
-  navigation: {
-    nextEl: '.right-btn3',
-  },
   speed: 750,
+
+  navigation: {
+    nextEl: '.about-me-skills-button',
+  },
+
+  grabCursor: true,
+  simulateTouch: true,
   keyboard: {
     enabled: true,
   },
 
-  grabCursor: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    // when window width is >= 678px
+    678: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 6,
+    },
+  },
 
-  simulateTouch: true,
   on: {
     init: function () {
       const activeIndex = this.activeIndex;
@@ -56,12 +59,6 @@ const swiperAbout = new Swiper('.swiper3', {
     },
   },
 });
-
-function resizeHandle() {
-  swiperAbout.params.slidesPerView = countSkillsPerView();
-  swiperAbout.update();
-}
-window.addEventListener('resize', resizeHandle);
 
 // ================ACCORDION=================
 
