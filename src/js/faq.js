@@ -10,13 +10,7 @@ const faqButtons = document.querySelectorAll('.faq-show-hidden-text-button');
 
 faqButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const useElement = button.querySelector('use');
-        const currentHref = useElement.getAttribute('href');
-        if (currentHref === './icons/sprite.svg#arrow-down') {
-            useElement.setAttribute('href', './icons/sprite.svg#arrow-up');
-        } else {
-            useElement.setAttribute('href', './icons/sprite.svg#arrow-down');
-        }
-
+        const arrowIcon = button.querySelector('.faq-button-icon');
+        arrowIcon.classList.toggle('arrow-up');
     })
 });
