@@ -1,7 +1,7 @@
 
 .covers {
 
-    width: 375px;
+    width: 100%;
     background-image: 
     url(../img/mobil/bg/m-covers.png);
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
     background-image: 
     url(../img/mobil/bg/m-covers.png);
     padding-bottom: 0;
-    width: 375px;
+    width: 100%;
     height: 497px;
     overflow: hidden;
     position: relative;
@@ -72,7 +72,7 @@
     height: 314px;
   }
   .covers {
-    width: 768px;
+    width: 100%;
     height: 960px;
     
     background-image: 
@@ -115,7 +115,7 @@
        padding-bottom: 164px; 
     }
     .covers {
-      width: 1440px;
+      width: 100%;
         position: relative;
         background-image: 
         url(../img/desktop/bg/d-covers.png);
