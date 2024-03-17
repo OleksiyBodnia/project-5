@@ -37,5 +37,8 @@ const swiperAbout = new Swiper('.swiper-about', {
   //   simulateTouch: true,
 });
 
-const accordionAbout = new Accordion('.accordion-container-about');
-accordion.open(0);
+const accordionAbout = new Accordion('.accordion-container-about', {
+  duration: 700,
+  showMultiple: true,
+});
+accordionAbout.open(0);
