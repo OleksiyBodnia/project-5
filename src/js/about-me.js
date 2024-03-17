@@ -19,11 +19,11 @@ function countSkillsPerView() {
   }
 }
 
-const swiperAbout = new Swiper('.swiper-about', {
+const swiperAbout = new Swiper('.swiper3', {
   slidesPerView: countSkillsPerView(),
   loop: true,
   navigation: {
-    nextEl: '.about-me-skills-button',
+    nextEl: '.right-btn3',
   },
   speed: 750,
   keyboard: {
