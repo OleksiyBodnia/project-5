@@ -35,7 +35,7 @@
     }
     .header-list{
         display: flex;
-        align-items: top;
+        align-items: start;
         justify-content: space-between;
     }
 
@@ -84,7 +84,7 @@
         transition: transform 0.5s ease-in-out;
     }
     @media screen and (min-resolution: 192dpi) and (min-width: 375px),
-  screen and (min-resolution: 2dpi) and (min-width: 375px),
+  screen and (min-resolution: 2dppx) and (min-width: 375px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
     .mobile-menu-header {
         background-image: url('../img/mobil/bg/m-hero-menu@2x.png');
@@ -223,7 +223,7 @@
     .menu__list.show {
         overflow: visible;
         opacity: 1;
-        max-height: auto;
+        height: auto;
     }
 
     .nav-item{
@@ -233,7 +233,7 @@
     .header__menu{
         position: absolute;
         z-index: 99;
-        bottom: 0;
+        top: 80px;
         left: -10px;
     }
     
