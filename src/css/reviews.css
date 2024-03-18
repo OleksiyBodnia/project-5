@@ -78,7 +78,7 @@
     
     gap: 12px;
 }
-#btn-div{
+#btn-div-id{
     position: relative;
     display: flex;
     align-items: center;
@@ -106,7 +106,7 @@
         padding-bottom: 96px;
         
     }
-    #btn-div{
+    #btn-div-id{
         gap: 40px;
     }
     .reviews-list {

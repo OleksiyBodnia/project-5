@@ -1,5 +1,5 @@
 /*======= MOBILE STYLES HERO   ============*/
-#hero-section {
+#hero-section-id {
   background: linear-gradient(
     270deg,
     #1c1d20 49.69%,
@@ -14,7 +14,7 @@
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppi) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
-  #hero-section {
+  #hero-section-id {
     background-image: url(../img/mobil/bg/m-hero-glass@2x.png);
   }
 }
@@ -89,7 +89,7 @@
 
 /*======= TABLET STYLES HERO   ============*/
 @media screen and (min-width: 768px) {
-  #hero-section {
+  #hero-section-id {
     background-image: url(../img/tablet/bg/t-hero-glass.png);
     background-repeat: no-repeat;
     background-position: left;
@@ -148,14 +148,14 @@
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppi) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  #hero-section {
+  #hero-section-id {
    background-image: url(../img/tablet/bg/t-hero-glass@2x.png);
   }
 }
 
 /*======= DESCTOP STYLES HERO   ============*/
 @media screen and (min-width: 1440px) {
-  #hero-section {
+  #hero-section-id {
     background-image: url(../img/desktop/bg/d-hero-glass.png);
     background-repeat: no-repeat;
     background-position: left;
@@ -176,7 +176,7 @@
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
   screen and (min-resolution: 2dppi) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  #hero-section {
+  #hero-section-id {
   background-image: url(../img/desktop/bg/d-hero-glass@2x.png);
   }
 }
