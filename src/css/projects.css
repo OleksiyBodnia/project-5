@@ -154,7 +154,9 @@
     }
 }
 @media screen and (min-width: 1440px){
-    #project-item-id{
+    #project-item-id,
+    #project-item-id2,
+    #project-item-id3{
         display: flex;
     }
     .btn-div{
