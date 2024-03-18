@@ -69,6 +69,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .container {

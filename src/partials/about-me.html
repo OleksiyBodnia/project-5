@@ -1,4 +1,4 @@
-<section class="about-me-section" id="about-me-section">
+<section class="about-me-section" id="about-me-section-id">
   <div class="about-me container">
     <h2 class="about-me-title">About me</h2>
     <div class="flex-container">
@@ -27,10 +27,19 @@
       />
     </div>
 
+    <!-- ---------------------ACCORDION-------------- -->
     <div>
-      <ul class="accordion-container">
-        <li class="about-me-summary underline">
-          <h3 class="about-me-summary-title">About me</h3>
+      <ul class="accordion-container-about">
+        <li class="about-me-summary underline ac">
+          <h3 class="about-me-summary-title ac-header">
+            About me
+            <button class="about-me-button-down ac-trigger" type="button">
+              <svg class="about-me-svg">
+                <use href="./icons/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
           <div class="about-me-summary-description about-me-outline ac-panel">
             <p class="about-me-summary-text about-me-summary-indent">
               I am Lloyd Jefferson, a talented programmer with extensive
@@ -46,7 +55,7 @@
               cooperate with colleagues, exchanging ideas and finding optimal
               solutions. Professional maturity allows you to calmly cope with
               challenges and stressful situations, while maintaining a high
-              quality of work. I am always looking for opportunities for
+              quality of work.I am always looking for opportunities for
               self-improvement. I actively study new technologies and practices
               to stay abreast of the latest innovations. I have a strong
               understanding of various programming languages, frameworks and
@@ -54,38 +63,33 @@
               scalable software.
             </p>
           </div>
-
-          <button class="about-me-button-up" type="button">
-            <svg class="about-me-svg">
-              <use href="./icons/sprite.svg#arrow-up"></use>
-            </svg>
-          </button>
-          <button class="about-me-button-down" type="button">
-            <svg class="about-me-svg">
-              <use href="./icons/sprite.svg#arrow-down"></use>
-            </svg>
-          </button>
         </li>
-        <li class="about-me-expirience underline">
-          <h3 class="about-me-expirience-title">Role</h3>
+        <li class="about-me-expirience underline ac">
+          <h3 class="about-me-expirience-title ac-header">
+            Role
+            <button class="about-me-button-down ac-trigger">
+              <svg class="about-me-svg">
+                <use href="./icons/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
           <ul class="about-me-expirience-list about-me-outline ac-panel">
             <li class="about-me-expirience-list-item">Frontend development</li>
             <li class="about-me-expirience-list-item">HeadlessCMS,Wordpress</li>
             <li class="about-me-expirience-list-item">Blender(enjoy)</li>
           </ul>
-          <button class="about-me-button-up" type="button">
-            <svg class="about-me-svg">
-              <use href="./icons/sprite.svg#arrow-up"></use>
-            </svg>
-          </button>
-          <button class="about-me-button-down">
-            <svg class="about-me-svg">
-              <use href="./icons/sprite.svg#arrow-down"></use>
-            </svg>
-          </button>
         </li>
-        <li class="about-me-education underline">
-          <h3 class="about-me-education-title">Education</h3>
+        <li class="about-me-education underline ac">
+          <h3 class="about-me-education-title ac-haeder">
+            Education
+            <button class="about-me-button-down ac-trigger">
+              <svg class="about-me-svg">
+                <use href="./icons/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
           <ul class="about-me-education-list about-me-outline ac-panel">
             <li class="about-me-education-list-item">
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
@@ -99,33 +103,30 @@
               2020 - 2022 / Advanced Blender Animation Techniques, Udemy
             </li>
           </ul>
-          <button class="about-me-button-up" type="button">
-            <svg class="about-me-svg">
-              <use href="./icons/sprite.svg#arrow-up"></use>
-            </svg>
-          </button>
-          <button class="about-me-button-down">
-            <svg class="about-me-svg">
-              <use href="./icons/sprite.svg#arrow-down"></use>
-            </svg>
-          </button>
         </li>
       </ul>
     </div>
 
+    <!-- ---------------------SWIPER----------------- -->
     <div class="about-me-skills-wrapper">
-      <ul class="about-me-skills">
-        <li class="about-me-skills-item">HTML/CSS</li>
-        <li class="about-me-skills-item">JavaScript</li>
-        <li class="about-me-skills-item">React</li>
-        <li class="about-me-skills-item">Node. js</li>
-        <li class="about-me-skills-item">React Native</li>
-        <li class="about-me-skills-item">Soft skills</li>
-      </ul>
-
-      <button class="about-me-skills-button" type="button">
+      <div class="swiper swiper-about">
+        <ul class="about-me-skills swiper-wrapper">
+          <li class="about-me-skills-item swiper-slide">HTML/CSS</li>
+          <li class="about-me-skills-item swiper-slide">JavaScript</li>
+          <li class="about-me-skills-item swiper-slide">React</li>
+          <li class="about-me-skills-item swiper-slide">Node. js</li>
+          <li class="about-me-skills-item swiper-slide">React Native</li>
+          <li class="about-me-skills-item swiper-slide">Vue.js</li>
+          <li class="about-me-skills-item swiper-slide">Soft skills</li>
+        </ul>
+      </div>
+      <button
+        class="about-me-skills-button swiper-button-next"
+        id="about-me-skills-button"
+        type="button"
+      >
         <svg class="about-me-skills-svg">
-          <use href="./icons/sprite.svg#arrow-right"></use>
+          <use href="./icons/sprite.svg#arrow-right2"></use>
         </svg>
       </button>
     </div>

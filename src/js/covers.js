@@ -1,24 +1,25 @@
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
 
+document.addEventListener("scroll", function() {
+    const coversSection = document.querySelector('.covers-section');
+    const marqueeContainers = document.querySelectorAll('.marquee__inner');
 
-const marqueeContainers = document.querySelectorAll('.marquee__inner');
-
-
-marqueeContainers.forEach(container => {
-    
-    const marqueeItems = Array.from(container.children);
-    
-    const shuffledItems = shuffleArray(marqueeItems);
-    
-    container.innerHTML = '';
-    
-    shuffledItems.forEach(item => {
-        container.appendChild(item);
-    });
+    if (isElementInViewport(coversSection)) {
+        marqueeContainers.forEach(container => {
+            const marqueeItems = Array.from(container.children);
+            const shuffledItems = shuffleArray(marqueeItems);
+            container.innerHTML = '';
+            shuffledItems.forEach(item => {
+                container.appendChild(item);
+            });
+        });
+    }
 });

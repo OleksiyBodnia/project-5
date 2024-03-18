@@ -1,5 +1,67 @@
-<header class="header-section" id="header-section">
+<header class="header-section" id="header-section-id">
   <div class="header container">
+
+    <ul class="header-list">
+      <li class="header-item"><div class="header__logo">
+        <div class="logo__image">
+          <img class="header_logo_pic"
+              srcset="
+                ./img/mobil/m-header-logo.jpg         343w,
+                ./img/tablet/t-header-logo-pic.jpg     704w,
+                ./img/desktop/d-header-logo-pic.jpg     680w,
+                ./img/mobil/m-header-logo@2x.jpg    686w,
+                ./img/tablet/t-header-logo-pic@2x.jpg   1414w,
+                ./img/desktop/d-header-logo-pic@2x.jpg  1360w
+              "
+              sizes="(min-width: 375px) 343px, (min-width: 768px) 704px, (min-width: 1440px) 680px"
+              src="./img/mobil/m-header-logo.jpg"
+              alt="photo"
+            />
+        </div>
+        <p class="logo__text">jefferson*</p>
+    </div>
+</li>
+      <li class="header-item nav-item header-item2">
+        <div class="navigation__menu">
+        <p class="menu__title">Menu</p>
+        <nav class="header__menu">
+            <ul class="menu__list">
+                <li class="list__item">
+                    <a href="#about-me-section-id" class="item__link smooth-scroll">About me</a>
+                </li>
+                <li class="list__item">
+                    <a href="#benefits-section-id" class="item__link smooth-scroll">Benefits</a>
+                </li>
+                <li class="list__item">
+                    <a href="#projects-section-id" class="item__link smooth-scroll">Projects</a>
+                </li>
+                <li class="list__item">
+                    <a href="#faq-section-id" class="item__link smooth-scroll">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+      </li>
+      <li class="header-item header-item3">
+        <a href="#work-together-section" class="navigation-link smooth-scroll">See project</a>
+      </li>
+      <li class="header-item header-item4"><svg class="burger" width="28" height="28">
+        <use href="./icons/sprite.svg#icon-menu-05"></use>
+      </svg></li>
+    </ul>
     
+    
+  </div>
+
+  <div class="mobile-menu-header">
+    <svg class="close-btn-header" width="28" height="28">
+      <use href="./icons/sprite.svg#x"></use>
+    </svg>
+    <ul class="mobile-menu-header-list">
+      <li class="mobile-menu-item"><a href="#about-me-section-id" class="mobile-menu-item-link smooth-scroll">About me</a></li>
+      <li class="mobile-menu-item"><a href="#benefits-section-id" class="mobile-menu-item-link smooth-scroll">Benefits</a></li>
+      <li class="mobile-menu-item"><a href="#projects-section-id" class="mobile-menu-item-link smooth-scroll">Projects</a></li>
+      <li class="mobile-menu-item"><a href="#faq-section-id" class="mobile-menu-item-link smooth-scroll">FAQ</a></li>
+    </ul>
+    <a href="#work-together-section-id" class="link-wt smooth-scroll">Order the project</a>
   </div>
 </header>

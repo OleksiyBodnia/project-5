@@ -1,40 +1,69 @@
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const accordion = new Accordion('.accordion-container', {});
-accordion.open(1);
+// ================SWIPER=================
 
-const buttonUp = document.querySelector('.about-me-button-up');
-const buttonUpAll = document.querySelectorAll('.about-me-button-up');
+const swiperAbout = new Swiper('.swiper-about', {
+  loop: true,
+  speed: 750,
 
-const buttonDown = document.querySelector('.about-me-button-down');
-const buttonDownAll = document.querySelectorAll('.about-me-button-down');
+  navigation: {
+    nextEl: '.about-me-skills-button',
+  },
 
-const accordionPanelAll = document.querySelectorAll('.ac-panel');
-const accordionPanel = document.querySelector('.ac-panel');
+  grabCursor: true,
+  simulateTouch: true,
+  keyboard: {
+    enabled: true,
+  },
 
-// accordionPanelAll.forEach(item => {
-//   return item.classList.add('visually-hidden');
-// });
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    // when window width is >= 678px
+    678: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 6,
+    },
+  },
 
-buttonUp.addEventListener('click', visiblePanel);
-buttonDown.addEventListener('click', invisiblePanel);
+  on: {
+    init: function () {
+      const activeIndex = this.activeIndex;
+      this.slides.forEach((slide, index) => {
+        if (index === activeIndex) {
+          slide.classList.add('active-slide');
+        } else {
+          slide.classList.remove('active-slide');
+        }
+      });
+    },
+    slideChange: function () {
+      const activeIndex = this.activeIndex;
+      this.slides.forEach((slide, index) => {
+        if (index === activeIndex) {
+          slide.classList.add('active-slide');
+        } else {
+          slide.classList.remove('active-slide');
+        }
+      });
+    },
+  },
+});
 
-accordionPanel.classList.add('visually-hidden');
-buttonDown.classList.add('is-hidden');
+// ================ACCORDION=================
 
-function visiblePanel() {
-  buttonDown.classList.remove('is-hidden');
-  buttonUp.classList.add('is-hidden');
-  accordionPanel.classList.remove('visually-hidden');
-}
-
-function invisiblePanel() {
-  buttonDown.classList.add('is-hidden');
-  buttonUp.classList.remove('is-hidden');
-  accordionPanel.classList.add('visually-hidden');
-}
-
-// buttonDownAll.forEach(item => {
-//   return item.classList.add('is-hidden');
-// });
+const accordionAbout = new Accordion('.accordion-container-about', {
+  duration: 700,
+  showMultiple: true,
+});
+accordionAbout.open(0);

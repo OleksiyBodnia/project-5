@@ -92,7 +92,7 @@
     .project-link:focus{
         background-color: #E0373F;
     }
-    #btn-div{
+    #btn-div-id{
         position: relative;
         display: flex;
         align-items: center;
@@ -117,7 +117,7 @@
 }
 
 @media screen and (min-width: 768px){
-    #btn-div{
+    #btn-div-id{
         gap: 40px;
     }
     #left-btn,
@@ -154,7 +154,9 @@
     }
 }
 @media screen and (min-width: 1440px){
-    #project-item{
+    #project-item-id,
+    #project-item-id2,
+    #project-item-id3{
         display: flex;
     }
     .btn-div{
