@@ -1,6 +1,7 @@
 .header-section {
     transition: background-image 0.3s ease, height 0.3s ease;
 }
+
 header {
     height: 0px;
     padding-top: 32px;
@@ -17,7 +18,7 @@ header {
 .header__container {
     display: flex;
     align-items: top;
-    margin: 0 auto; 
+    margin: 0 auto;
     position: absolute;
 }
 
@@ -174,6 +175,7 @@ body.lock {
         left: 0;
         bottom: 0;
     }
+
     .header__container {
         max-width: 768px;
     }
@@ -224,10 +226,12 @@ body.lock {
         opacity: 1;
         overflow: auto;
     }
-    .navigation__menu{
+
+    .navigation__menu {
         height: 100hv;
     }
-    .header__logo{
+
+    .header__logo {
         margin-right: 45px;
     }
 }
@@ -237,8 +241,8 @@ body.lock {
         max-width: 1440px;
     }
 
-    .header__logo{
+    .header__logo {
         margin-right: 45px;
     }
-    
+
 }
