@@ -6,6 +6,7 @@ const mobileMenuHeader = document.querySelector('.mobile-menu-header');
 const burger = document.querySelector('.burger');
 const menuBirgerLink = document.querySelectorAll('.mobile-menu-item-link');
 const bottomBurgerMenuBtn = document.querySelector('.link-wt');
+const logo = document.querySelector('.logo__image');
 
 smoothScrollLinks.forEach(link => {
     link.addEventListener('click', function(event) {
@@ -49,15 +50,10 @@ bottomBurgerMenuBtn.addEventListener('click', function() {
     mobileMenuHeader.classList.remove('showMenu') 
 })
 
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
-
-// headerBtn.addEventListener('click', function() {
-//     workTogetherSection.scrollIntoView({ behavior: 'smooth' });
-//     if (window.innerWidth <= 376) {
-//         containerHeader.classList.toggle('open');
-//         body.classList.toggle('lock');
-//         headerSection.style.backgroundImage = 'none';
-//         headerSection.style.height = "0px";
-//         navigationMenu.style.height = "0vh";
-//     }
-// });
+logo.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+})
