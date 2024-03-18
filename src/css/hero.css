@@ -149,13 +149,7 @@
   screen and (min-resolution: 2dppi) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   #hero-section {
-    background-image: linear-gradient(
-        270deg,
-        #1c1d20 49.69%,
-        #69292d 67.71%,
-        #ed3b44 99.91%
-      ),
-      url(../img/tablet/bg/t-hero-glass@2x.png);
+   background-image: url(../img/tablet/bg/t-hero-glass@2x.png);
   }
 }
 
@@ -183,12 +177,6 @@
   screen and (min-resolution: 2dppi) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   #hero-section {
-    background-image: linear-gradient(
-        270deg,
-        #1c1d20 49.69%,
-        #69292d 67.71%,
-        #ed3b44 99.91%
-      ),
-      url(../img/desktop/bg/d-hero-glass@2x.png);
+  background-image: url(../img/desktop/bg/d-hero-glass@2x.png);
   }
 }
