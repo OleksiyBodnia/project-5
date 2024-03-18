@@ -2,28 +2,30 @@
     <div class="work-together container">
 <!-- шапка розділу з іконкою та закликом -->
         <h2 class="work-together-header">
-            <ul class="work-together-list-of-header">
-                <li class="work-together-first-line-of-header">
+            <span class="work-together-list-of-header">
+                <span class="work-together-first-line-of-header">
                     <!-- підвантаження іконки під різні ретіна-екрани -->
                     <picture class="work-together-owner-photo">
-                        <source media="(min-width:1440px)" srcset="
-                                                        ./img/desktop/d-work-together-icon.jpg 1x,
-                                                        ./img/desktop/d-work-together-icon@2x.jpg 2x
-                                                        " type="image/jpg" />
-                        <source media="(min-width:768px)" srcset="
-                                                        ./img/tablet/t-work-together-icon.jpg 1x,
-                                                        ./img/tablet/t-work-together-icon@2x.jpg 2x
-                                                        " type="image/jpg" />
-                        <source media="(max-width:767px)" srcset="
-                                                        ./img/mobil/m-work-together-icon.jpg 1x,
-                                                        ./img/mobil/m-work-together-icon@2x.jpg 2x
-                                                        " type="image/jpg" />
-                        <img class="work-together-logo-img" src="./img/mobil/m-work-together-icon.jpg" alt="Owner's portfolio photo" />
+                        <source media="(min-width:1440px)" 
+                            srcset="./img/desktop/d-work-together-icon.jpg 1x,
+                            ./img/desktop/d-work-together-icon@2x.jpg 2x" 
+                            type="image/jpg" />
+                        <source media="(min-width:768px)" 
+                            srcset="./img/tablet/t-work-together-icon.jpg 1x,
+                            ./img/tablet/t-work-together-icon@2x.jpg 2x" 
+                            type="image/jpg" />
+                        <source media="(max-width:767px)" 
+                            srcset="./img/mobil/m-work-together-icon.jpg 1x,
+                            ./img/mobil/m-work-together-icon@2x.jpg 2x" 
+                            type="image/jpg" />
+                        <img class="work-together-logo-img" 
+                            src="./img/mobil/m-work-together-icon.jpg" 
+                            alt="Owner's portfolio photo" />
                     </picture>
                     Let’s <span class="span-highlight"> work </span>
-                </li>
-                <li>together</li>
-            </ul>
+                </span>
+                <span>together</span>
+            </span>
         </h2>
 <!-- форма зв'язку -->
         <form class="work-together-subscribe">
@@ -50,7 +52,7 @@
                         maxlength="200"
                         placeholder="comments"
                         autocomplete="off"
-                        required></input>
+                        required>
                     <label class="label-input-comments" for="comments"></label>
                     </div>
                 </li>
@@ -78,9 +80,9 @@
                 </svg>
             </button>
             <!-- заголовок модального вікна -->
-            <h3 class="work-together-modal-head-text" name="title"></h3>
+            <h3 class="work-together-modal-head-text"></h3>
             <!-- текст модального вікна -->
-            <p class="work-together-invitation" name="message"></p>
+            <p class="work-together-invitation"></p>
         </div>
         <!-- затемнялка фону за модальним вікном -->
         <div class="modal-backdrop-bg visually-hidden"></div>

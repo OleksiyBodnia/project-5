@@ -437,8 +437,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .work-together-backdrop {
         position: absolute;
         border-radius: 20px;
-        border: 1px solid r
-        gba(250, 250, 250, 0.10);
+        border: 1px solid rgba(250, 250, 250, 0.10);
         background: #242527;
         padding: 64px;
         text-align: center;
