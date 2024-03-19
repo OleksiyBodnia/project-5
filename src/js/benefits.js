@@ -6,9 +6,11 @@
 //   workTogetherSection.scrollIntoView({ behavior: "smooth" });
 // }
 
-const benefitsButton = document.querySelector('.benefits-button');
-const workTogetherSection = document.getElementById('work-together-section-id');
 
-benefitsButton.addEventListener('click', () => {
-  workTogetherSection.scrollIntoView({ behavior: 'smooth' });
-});
+// працюэ для кнопки (<!-- <button type="button" class="benefits-button">Order the project</button> -->)
+// const benefitsButton = document.querySelector('.benefits-button');
+// const workTogetherSection = document.getElementById('work-together-section-id');
+
+// benefitsButton.addEventListener('click', () => {
+//   workTogetherSection.scrollIntoView({ behavior: 'smooth' });
+// });
