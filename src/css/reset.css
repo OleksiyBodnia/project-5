@@ -27,7 +27,7 @@ a {
   cursor: pointer;
 }
 
-button {
+button,input {
   cursor: pointer;
 }
 
