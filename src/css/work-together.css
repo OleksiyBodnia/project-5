@@ -501,6 +501,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     right: 20px;
 }
 
+/* заборона прокрутки сторінки при відкритому модальному вікні */
+body.modal-open {
+    overflow: hidden;
+}
 
 /* =======  Правила для мобілки  =======  */
 @media screen and (max-width: 767px) {}
