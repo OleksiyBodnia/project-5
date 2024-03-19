@@ -108,7 +108,7 @@
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
-  screen and (min-resolution: 2dppi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   #hero-section-id {
     background-image: var(--bg-image2x);
@@ -235,7 +235,7 @@
 
 .color span.active {
   border: 2px solid var(--main-color);
-  scale: 1.5;
+  transform: scale(1.5);
 }
 
 
@@ -310,7 +310,7 @@
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .hero-section {
     background-image: var(--bg-image2x);
@@ -353,7 +353,7 @@
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-  screen and (min-resolution: 2dppi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .hero-section {
     background-image: var(--bg-image2x);
