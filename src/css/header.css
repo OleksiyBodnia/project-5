@@ -1,4 +1,10 @@
 @media screen and (min-width: 375px) {
+    .header-section.scrolled {
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .header-section.show{
+        height: 164px;
+    }
     .header-section{
         position: fixed;
         top: 0;
@@ -8,7 +14,7 @@
         align-items: center;
         justify-content: center;
         z-index: 999;
-        height: 150px;
+        height: 144px;
     }
 
     .header{
@@ -22,6 +28,7 @@
     .header__logo{
         display: flex;
         gap: 8px;
+        cursor: pointer;
     }
 
     .logo__text{
@@ -163,6 +170,7 @@
         letter-spacing: -0.02em;
         text-decoration-line: underline;
         transition: color 0.3s ease-in-out;
+        cursor: pointer;
     }
     .menu__title:hover,
     .menu__title:focus{
@@ -197,6 +205,9 @@
         align-items: center;
         justify-content: center;
         width: 67px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        height: 91px;
     }
     .item__link{
         color: #FAFAFA;
@@ -224,6 +235,8 @@
         overflow: visible;
         opacity: 1;
         height: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
     }
 
     .nav-item{
@@ -234,7 +247,7 @@
         position: absolute;
         z-index: 99;
         top: 80px;
-        left: -10px;
+        left: -10px;   
     }
     
     

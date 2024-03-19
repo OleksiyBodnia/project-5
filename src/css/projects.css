@@ -87,6 +87,7 @@
         line-height: normal;
         letter-spacing: -0.02em;
         transition: background-color 0.3s ease;
+        cursor: pointer;
     }
     .project-link:hover,
     .project-link:focus{
@@ -113,6 +114,7 @@
         color: transparent;
         position: relative;
         background-color: transparent;
+        cursor: pointer;
     }
 }
 
