@@ -10,6 +10,7 @@ const modalBackdropBg = document.querySelector(".modal-backdrop-bg");
 const modalTitle = document.querySelector(".work-together-modal-head-text");
 const modalText = document.querySelector(".work-together-invitation");
 const modalBtn = document.querySelector(".work-together-modal-close-x-btn");
+const body = document.body;
 
 // підслуховувач відправки форми
 contactForm.addEventListener("submit", getContactInfo);
@@ -56,10 +57,11 @@ function getContactInfo(event) {
         })
         .then(data => {
             // із запитом все ок - відкриваємо модалку із привітанням що скоро зв'яжемось,
-            // ставимо затемнялку на всю сторінку за модальним вікном
+            // ставимо затемнялку на всю сторінку за модальним вікном, відключаємо прокрутку сторінки
             modalBackdrop.classList.remove("visually-hidden");
             modalBackdrop.style.display = 'block';
             modalBackdropBg.classList.remove("visually-hidden");
+            body.classList.add('modal-open');
             // в повідомлення на модалці вставляємо відповідь з сервера 
             modalTitle.textContent = data.title;
             modalText.textContent = data.message;
@@ -130,7 +132,7 @@ function checkCommentLength(event) {
 
 // слухачі подій на модалці і на кнопці модалки
 modalBtn.addEventListener("click", closeModal);
-modalBackdrop.addEventListener("click", closeModal);
+modalBackdropBg.addEventListener("click", closeModal);
 // підслуховувач на натискання кнопки ESC
 document.addEventListener("keydown", event => {
     if (event.key === 'Escape' || event.key === 'Esc' || event.code === 27) {
@@ -139,8 +141,10 @@ document.addEventListener("keydown", event => {
 });
 
 // функція закриття модального вікна, ховає його? прописує невидимість, прибирає затемнялку зі сторінки
+// включає можливість прокрутки сторінки
 function closeModal() {
     modalBackdrop.classList.add("visually-hidden");
     modalBackdrop.style.display = 'none';
     modalBackdropBg.classList.add("visually-hidden");
+    body.classList.remove('modal-open');
 }
