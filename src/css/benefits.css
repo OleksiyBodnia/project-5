@@ -175,3 +175,19 @@
 .benefits-list-item:hover {
     box-shadow: 0 0 5px #69292d, inset 0 0 10px #69292d;
 }
+
+/* _360_ */
+
+.benefits-list-item:hover {
+    animation: rotate 1s ease-in-out forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
