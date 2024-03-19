@@ -1,20 +1,26 @@
-function toggleTheme(theme) {
+document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero-section');
-    const selectedSpan = document.querySelector('.color .active');
-    selectedSpan.classList.remove('active');
-    const newActiveSpan = document.querySelector(`.color .${theme}`);
-    newActiveSpan.classList.add('active');
+    const colorOptions = document.querySelectorAll('.color span');
 
-    // Сохраняем текущее значение background и background-image
-    const currentBackground = heroSection.style.background;
-    const currentBackgroundImage = heroSection.style.backgroundImage;
+    colorOptions.forEach(span => {
+        span.addEventListener('click', function() {
+            const theme = this.classList[0]; // Получаем класс первого элемента span (theme)
+            const selectedSpan = document.querySelector('.color .active');
+            selectedSpan.classList.remove('active');
+            this.classList.add('active');
 
-    // Устанавливаем новые значения для темы
-    heroSection.style.setProperty('--main-color', getComputedStyle(newActiveSpan).getPropertyValue('--main-color'));
-    heroSection.setAttribute('data-theme', theme);
-    heroSection.style.backgroundImage = newActiveSpan.style.backgroundImage;
+            // Сохраняем текущее значение background и background-image
+            const currentBackground = heroSection.style.background;
+            const currentBackgroundImage = heroSection.style.backgroundImage;
 
-    // Восстанавливаем сохраненные значения background и background-image
-    heroSection.style.background = currentBackground;
-    heroSection.style.backgroundImage = currentBackgroundImage;
-}
+            // Устанавливаем новые значения для темы
+            heroSection.style.setProperty('--main-color', getComputedStyle(this).getPropertyValue('--main-color'));
+            heroSection.setAttribute('data-theme', theme);
+            heroSection.style.backgroundImage = getComputedStyle(this).backgroundImage;
+
+            // Восстанавливаем сохраненные значения background и background-image
+            heroSection.style.background = currentBackground;
+            heroSection.style.backgroundImage = currentBackgroundImage;
+        });
+    });
+});
