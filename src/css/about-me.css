@@ -1,3 +1,7 @@
+.about-me-section {
+  margin-top: 64px;
+}
+
 .about-me-title {
   position: absolute;
   width: 1px;
@@ -280,6 +284,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .about-me-section {
+    margin-top: 96px;
+  }
+
   .flex-container {
     display: flex;
   }
