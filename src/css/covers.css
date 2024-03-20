@@ -11,7 +11,14 @@
     
 }
 .covers-img {
-  height: 200px;
+  .cowers-img {
+    display: flex;
+    gap: 35PX;
+    column-gap: 35px;
+    height: 163px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppi) and (min-width: 320px),
@@ -71,8 +78,15 @@
   .covers-section {
     padding-bottom: 96px;
   }
-  .covers-img{
-    height: 314px;
+  .covers-img {
+    .cowers-img {
+      display: flex;
+      gap: 40PX;
+      column-gap: 50px;
+      height: 314px;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   .covers {
     width: 768px;
