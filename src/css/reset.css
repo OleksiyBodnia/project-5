@@ -24,9 +24,10 @@ ol {
 a {
   color: currentColor;
   text-decoration: none;
+  cursor: pointer;
 }
 
-button {
+button,input {
   cursor: pointer;
 }
 
@@ -69,6 +70,18 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+body.lock {
+  overflow: hidden;
+}
+@font-face {
+  font-family: "Inter Tight";
+  src: url('../fonts/InterTight-VariableFont_wght.ttf');
+}
+
+
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .container {

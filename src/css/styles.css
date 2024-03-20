@@ -8,3 +8,24 @@
 @import url('./reviews.css');
 @import url('./covers.css');
 @import url('./work-together.css');
+
+:root {
+    --black: #1C1D20;
+    --dark-gray: #242527;
+    --medium-gray: #3B3B3B;
+    --white: #FAFAFA;
+    --green: #3CBC81;
+    --red: #ED3B44;
+    --red-hover: #E0373F;
+}
+
+/* --light-green: #C6E327;
+    --light-green-hover: rgba(198, 227, 39, 0.8);
+    --blue: #0041E8;
+    --blue-hover: rgba(0, 65, 232, 0.8);
+    --orange: #E6533C;
+    --orange-hover: rgba(230, 83, 60, 0.8);
+    --dark-green: #2B4441;
+    --dark-green-hover: rgba(43, 68, 65, 0.8);
+    --orange-yellow: #FF7F08;
+    --orange-yellow-hover: rgba(255, 127, 8, 0.8); */

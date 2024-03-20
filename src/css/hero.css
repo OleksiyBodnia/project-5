@@ -1,0 +1,362 @@
+/* Общие стили */
+.hero-section {
+  --second-color: #1c1d20;
+  --third-color: #fafafa;
+  --main-color: #ed3b44;
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
+  --bg-image: url(../img/bg-theme/red.png);
+  --bg-image2x: url(../img/bg-theme/red@2x.png);
+}
+
+/* Стили для красной темы */
+.hero-section[data-theme='red-theme'] {
+  --main-color: #ed3b44;
+  --font-color: var(--third-color);
+  --bg-image: url(../img/bg-theme/red.png);
+  --bg-image2x: url(../img/bg-theme/red@2x.png);
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
+}
+
+/* Стили для зеленой темы */
+.hero-section[data-theme='green-theme'] {
+  --main-color: #c6e327;
+  --font-color: var(--third-color);
+  --bg-image: url(../img/bg-theme/green.png);
+  --bg-image2x: url(../img/bg-theme/green@2x.png);
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
+}
+
+/* Стили для синей темы */
+.hero-section[data-theme='blue-theme'] {
+  --main-color: #0041e8;
+  --font-color: var(--third-color);
+  --bg-image: url(../img/bg-theme/blue.png);
+  --bg-image2x: url(../img/bg-theme/blue@2x.png);
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
+}
+
+/* Стили для оранжевой темы */
+.hero-section[data-theme='orange-theme'] {
+  --main-color: #e6533c;
+  --font-color: var(--third-color);
+  --bg-image: url(../img/bg-theme/orange.png);
+  --bg-image2x: url(../img/bg-theme/orange@2x.png);
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
+}
+
+/* Стили для темно-зеленой темы */
+.hero-section[data-theme='dark-green-theme'] {
+  --main-color: #2b4441;
+  --font-color: var(--third-color);
+  --bg-image: url(../img/bg-theme/dark-green.png);
+  --bg-image2x: url(../img/bg-theme/dark-green@2x.png);
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
+}
+
+/* Стили для желтой темы */
+.hero-section[data-theme='yellow-theme'] {
+  --main-color: #ff7f08;
+  --font-color: var(--third-color);
+  --bg-image: url(../img/bg-theme/yellow.png);
+  --bg-image2x: url(../img/bg-theme/yellow@2x.png);
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
+}
+
+/*======= MOBILE STYLES HERO   ============*/
+.hero-section {
+  background: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 375px 812px;
+ 
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+  #hero-section-id {
+    background-image: var(--bg-image2x);
+  }
+}
+.hero {
+  color: var(--third-color);
+  padding-top: 281px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 212px;
+}
+
+.main-title {
+  width: 343px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-contact,
+.social-icon,
+.hero-e-mail {
+  color: inherit;
+}
+.hero-contact {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+.contact-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-left: auto;
+}
+.social-icon {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  height: 37px;
+  width: 37px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hero-e-mail {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  text-align: center;
+  padding: 10px 12px;
+  height: 37px;
+  width: 178px;
+}
+.social-icon:hover,
+.hero-e-mail:hover {
+  background: var(--main-color);
+  box-shadow: 0 0 5px var(--main-color);
+  filter: brightness(0.6);
+}
+
+.color {
+  position: absolute;
+  bottom: 37px;
+  left: calc(100% - 16px);
+  transform: translateX(-50%);
+  padding: 10px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.color span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color span.red-theme {
+  --main-color: #ed3b44;
+}
+
+.color span.green-theme {
+  --main-color: #c6e327;
+}
+
+.color span.blue-theme {
+  --main-color: #0041e8;
+}
+
+.color span.orange-theme {
+  --main-color: #e6533c;
+}
+
+.color span.dark-green-theme {
+  --main-color: #2b4441;
+}
+
+.color span.yellow-theme {
+  --main-color: #ff7f08;
+}
+
+.color span {
+  background: var(--main-color);
+}
+
+.color span.active {
+  border: 2px solid var(--main-color);
+  transform: scale(1.5);
+}
+
+
+/*======= TABLET STYLES HERO   ============*/
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background: var(--bg-color);
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 768px 1024px;
+  }
+  .hero {
+    padding-top: 300px;
+    gap: 187px;
+  }
+  .main-title {
+    width: 632px;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--font-color);
+    margin-left: 0;
+  }
+  .color {
+ 
+  bottom: 55px;
+ 
+}
+  .hero-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+  .contact-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-left: auto;
+  }
+  .social-icon {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: inherit;
+    height: 55px;
+    width: 55px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .hero-e-mail {
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    height: 55px;
+    width: 223px;
+  }
+  .social-icon:hover,
+  .hero-e-mail:hover {
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
+    filter: brightness(0.6);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero-section {
+    background-image: var(--bg-image2x);
+  }
+
+  .social-icon:focus,
+  .hero-e-mail:focus {
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
+    filter: brightness(0.6);
+  }
+}
+
+/*======= DESCTOP STYLES HERO   ============*/
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    background: var(--bg-color);
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+  }
+
+  .hero {
+    gap: 243px;
+  }
+
+  .main-title {
+    width: 1084px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-icon:hover,
+  .hero-e-mail:hover {
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
+    filter: brightness(0.6);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .hero-section {
+    background-image: var(--bg-image2x);
+  }
+}
+

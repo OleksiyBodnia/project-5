@@ -1,0 +1,195 @@
+/* mobile styles */
+
+@media screen and (min-width: 320px) {
+    .benefits-section {
+        margin-bottom: 64px;
+    }
+
+    .benefits-title {
+        color: rgba(250, 250, 250, 0.40);
+        font-family: "Inter Tight";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+            /* 150% */
+        letter-spacing: -0.32px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    .benefits-title-h3 {
+        color: var(--white);
+        
+        /* Mobile/H5 */
+        font-family: "Inter Tight";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        /* 150% */
+        letter-spacing: -0.4px;
+    }
+
+    .benefits-title-p {
+        color: rgba(250, 250, 250, 0.60);
+        
+        /* Mobile/Main text */
+        font-family: "Inter Tight";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+            /* 150% */
+        letter-spacing: -0.32px;
+    }
+
+    .benefits-list-item {
+        display: flex;
+        width: 344px;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        /* gap: 64px; */
+
+        border-radius: 20px;
+        background: #242527;
+    }
+
+    .benefits-list li:nth-child(1),
+    .benefits-list li:nth-child(2),
+    .benefits-list li:nth-child(3) {
+        margin: 0 0 16px;
+    }
+
+    .img-benefits-item {
+        display: flex;
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 10px;
+        background: var(--red);
+
+        margin-bottom: 64px;
+    }
+
+    .benefits-button {
+        display: flex;
+        padding: 18px 36px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+        border-radius: 60px;
+        border: 1px solid rgba(250, 250, 250, 0.20);
+
+        color: var(--white);
+        
+            /* Mobile/Btn_text */
+        font-family: "Inter Tight";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.32px;
+
+        background-color: var(--black);
+        width: 190px;
+        height: 55px;
+    }
+
+    .benefits-list {
+        margin-bottom: 32px;
+            /* Add margin-bottom to the ul */
+    }
+    
+    .benefits-button {
+        margin-top: 0;
+            /* Remove any default margin-top from button */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-list {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 16px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .benefits-list li:nth-child(1),
+    .benefits-list li:nth-child(2),
+    .benefits-list li:nth-child(3) {
+        margin: 0;
+    }
+
+    .benefits-list {
+        margin-bottom: 64px;
+    }
+    
+    .benefits-button {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .benefits-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        margin-left: 672px;
+    }
+        
+    .benefits-list {
+        margin-top: -52px;
+    }
+
+    .benefits-list {
+        display: inline-flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .benefits-list li:nth-child(1),
+    .benefits-list li:nth-child(2),
+    .benefits-list li:nth-child(3) {
+        margin: 0;
+    }
+    
+}
+
+.benefits-button:focus {
+    border: 1px solid var(--white);
+}
+
+.benefits-button:hover {
+    background-color: var(--red-hover);
+    box-shadow: 0 0 5px var(--red-hover);
+}
+
+.benefits-list-item:hover {
+    box-shadow: 0 0 5px var(--red-hover), inset 0 0 10px var(--red-hover);
+}
+
+/* _360_ */
+
+.benefits-list-item:hover {
+    animation: rotate 1s ease-in-out forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(4deg);
+    }
+}

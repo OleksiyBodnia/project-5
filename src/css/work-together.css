@@ -1,0 +1,521 @@
+/* незмінні стилі */
+.work-together-section {
+    color: var(--white);
+    margin: 0 auto;
+}
+
+.work-together {
+    position: relative;
+}
+
+.span-highlight {
+    color: var(--red);
+}
+
+/* ефект скла накладений на звичайний темносірий бекграунд */
+/* звичайний екран на мобілці*/
+@media screen and (max-width: 767px) {
+    .work-together {
+        background:
+            url("../img/mobil/bg/m-work-together-glass.png") top right no-repeat;
+    }
+}
+
+/* 2х екран на мобілці*/
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .work-together {
+        background:
+            url("../img/mobil/bg/m-work-together-glass@2x.png") top right no-repeat;
+        background-size: 85px 552px;
+    }
+}
+
+/* на планшеті */
+@media screen and (min-width: 768px) {
+    .work-together {
+            background:
+                url("../img/tablet/bg/t-work-together-glass.png") top right no-repeat;
+        }
+}
+
+/* 2х на планшеті */
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .work-together {
+        background:
+            url("../img/tablet/bg/t-work-together-glass@2x.png") top right no-repeat;
+        background-size: 198px 636px;
+    }
+}
+
+/* на моніторі */
+@media screen and (min-width: 1440px) {
+    .work-together {
+        padding: 0 164px;
+        background:
+            url("../img/desktop/bg/d-work-together-glass.png") top right no-repeat;
+        }
+}
+
+/* 2х на моніторі */
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+screen and (min-resolution: 2dppx) and (min-width: 1440px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    .work-together {
+        background:
+            url("../img/desktop/bg/d-work-together-glass@2x.png") top right no-repeat;
+        background-size: 400px 636px;
+    }
+}
+
+/* правила для відображення заголовку */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-header {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -1.2px;
+        text-transform: uppercase;
+        margin-bottom: 63px;
+}
+}
+
+/* планшет і монітор*/
+@media screen and (min-width: 768px) {
+    .work-together-header {
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -1.92px;
+        text-transform: uppercase;
+        margin-bottom: 64px;
+    }
+}
+
+/* список заголовка */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-list-of-header {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 4px;
+    }
+}
+
+/* планшет + екран */
+@media screen and (min-width: 768px) {
+    .work-together-list-of-header {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 7px;
+    }
+}
+
+/* відображення іконки і заголовка 1 строчки */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-first-line-of-header {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+/* планшет + екран */
+@media screen and (min-width: 768px) {
+    .work-together-first-line-of-header {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* заокруглення на іконці-фотці */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-logo-img {
+        border-radius: 12px;
+    }
+}
+
+/* планшетт + екран */
+@media screen and (min-width: 768px) {
+    .work-together-logo-img {
+        border-radius: 24px;
+    }
+}
+
+/* розміри фото-іконки */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-owner-photo {
+        width: 44px;
+        height: 44px;
+        display: block;
+    }
+}
+
+/* планшет + екран */
+@media screen and (min-width: 768px) {
+    .work-together-owner-photo {
+        width: 70px;
+        height: 70px;
+        display: block;
+    }
+}
+
+/* основні стилі форми для заповнення контактів для співпраці*/
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-subscribe {
+        color: rgba(250, 250, 250, 0.60);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.32px;
+        margin-bottom: 64px;
+    }
+}
+
+/* планшет + екран*/
+@media screen and (min-width: 768px) {
+    .work-together-subscribe {
+        color: rgba(250, 250, 250, 0.60);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.32px;
+        margin-bottom: 18px;
+    }
+}
+
+/* стилі для полів форми  */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-input-email,
+    .work-together-comments {
+        background-color: var(--black);
+        resize: none;
+        border: none;
+        color: rgba(250, 250, 250, 0.60);
+        border-bottom: 1px solid rgba(250, 250, 250, 0.20);
+        width: 100%;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}
+
+/* планшет */
+@media screen and (min-width: 768px) {
+    .work-together-input-email,
+    .work-together-comments {
+            background-color: var(--black);
+            resize: none;
+            border: none;
+            color: rgba(250, 250, 250, 0.60);
+            border-bottom: 1px solid rgba(250, 250, 250, 0.20);
+            width: 245px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+}
+
+/* екран */
+@media screen and (min-width: 1440px) {
+    .work-together-input-email,
+    .work-together-comments {
+        width: 390px;
+    }
+}
+
+/* стилі при ховері і фокусі */
+.work-together-input-email:hover,
+.work-together-comments:hover {
+    border: 1px solid var(--white);
+}
+
+.work-together-input-email:focus,
+.work-together-comments:focus {
+    border-color: var(--black);
+}
+
+/* геометрія полів форми з кнопкою*/
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-list-in-form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* планшет */
+@media screen and (min-width: 768px) {
+    .work-together-list-in-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+}
+
+/* екран */
+@media screen and (min-width: 1440px) {
+    .work-together-list-in-form {
+        gap: 86px;
+    }
+}
+
+/* геометрія тільки 2-х inputів */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-item-of-form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* планшет + екран */
+@media screen and (min-width: 768px) {
+    .work-together-item-of-form {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+}
+
+/* стилі лейблів під полями у формі */
+.subscribe-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* стилі кнопки */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-btn {
+        background-color: var(--red);
+        color: var(--white);
+        border-radius: 50%;
+        border: none;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* планшет + екран */
+@media screen and (min-width: 768px) {
+    .work-together-btn {
+        background-color: var(--red);
+        color: var(--white);
+        border-radius: 50%;
+        border: none;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* стилі при говері і фокусі */
+.work-together-btn:hover,
+.work-together-btn:focus {
+    background-color: var(--red-hover);
+}
+
+/* стилі для посилань - щоб не косило їх */
+.work-together-link {
+    font-style: normal;
+}
+
+/* стилі для посилань на контакти - емейл і телефон */
+/* для  мікромобілок щоб посилання влазили*/
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .work-together-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 32px;
+    }
+}
+
+/* для нормальних мобілок як на макеті */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .work-together-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        margin-bottom: 32px;
+    }
+}
+
+/* планшет і екран */
+@media screen and (min-width: 768px) {
+    .work-together-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-bottom: 169px;
+    }
+}
+
+/* стилі обгорток для посилань - наче кнопки */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    .work-together-menu-link {
+        border-radius: 60px;
+        border: 1px solid rgba(250, 250, 250, 0.20);
+        background-color: transparent;
+        padding: 10px 12px;
+        text-align: center;
+    }
+}
+
+/* планшет + екран */
+@media screen and (min-width: 768px) {
+    .work-together-menu-link {
+        border-radius: 60px;
+        border: 1px solid rgba(250, 250, 250, 0.20);
+        background-color: transparent;
+        padding: 18px 32px;
+    }
+}
+
+/* стилі при говері і фокусі */
+.work-together-menu-link:hover,
+.work-together-menu-link:focus {
+    background-color: var(--red-hover);
+}
+
+/* стилі модального вікна */
+/* мобілка */
+@media screen and (max-width: 767px) {
+    /* саме модальне вікно */
+    .work-together-backdrop {
+        position: absolute;
+        border-radius: 20px;
+        padding: 64px 32px;
+        text-align: center;
+        width: 343px;
+        height: 276px;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999999999;
+        background: rgba(255, 255, 255, 0.2);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+    } 
+
+    /* затемнялка стрінки за модальним вікном */
+    .modal-backdrop-bg {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+}
+
+/* планшет і екран */
+@media screen and (min-width: 768px) {
+    /* саме модальне вікно */
+    .work-together-backdrop {
+        position: absolute;
+        border-radius: 20px;
+        padding: 64px;
+        text-align: center;
+        width: 492px;
+        height: 246px;
+        display: none;   
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999999999;
+        background: rgba(255, 255, 255, 0.2);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* затемнялка стрінки за модальним вікном */
+     .modal-backdrop-bg {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+}
+
+/* стилі заголовка на модальному вікні */
+.work-together-modal-head-text {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    margin-bottom: 16px;
+}
+
+/* стилі тексту привітання на модальному вікні */
+.work-together-invitation {
+    color: rgba(250, 250, 250, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+}
+
+/* стилі SVG в кнопці-закривашці на модалці */
+.work-together-modal-close-x-svg {
+    fill: var(--white);
+    border: none;
+    background: var(--dark-gray);
+}
+
+/* стилі кнопки закривашки на модалці */
+.work-together-modal-close-x-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-gray);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 3px;
+}
+
+/* заборона прокрутки сторінки при відкритому модальному вікні */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* =======  Правила для мобілки  =======  */
+@media screen and (max-width: 767px) {}
+/* =======  Правила для планшетів  =======  */
+@media screen and (min-width: 768px) {}
+/* =======  Правила для десктопів  =======  */
+@media screen and (min-width: 1440px) {}
