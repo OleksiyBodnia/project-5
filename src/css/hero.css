@@ -181,7 +181,7 @@
 }
 .social-icon:hover,
 .hero-e-mail:hover {
-  background-color: var(--main-color);
+  background: var(--main-color);
   box-shadow: 0 0 5px var(--main-color);
   filter: brightness(0.6);
 }
@@ -230,7 +230,7 @@
 }
 
 .color span {
-  background-color: var(--main-color);
+  background: var(--main-color);
 }
 
 .color span.active {
@@ -242,7 +242,7 @@
 /*======= TABLET STYLES HERO   ============*/
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-position: left;
@@ -303,7 +303,7 @@
   }
   .social-icon:hover,
   .hero-e-mail:hover {
-    background-color: var(--main-color);
+    background: var(--main-color);
     box-shadow: 0 0 5px var(--main-color);
     filter: brightness(0.6);
   }
@@ -318,7 +318,7 @@
 
   .social-icon:focus,
   .hero-e-mail:focus {
-    background-color: var(--main-color);
+    background: var(--main-color);
     box-shadow: 0 0 5px var(--main-color);
     filter: brightness(0.6);
   }
@@ -327,7 +327,7 @@
 /*======= DESCTOP STYLES HERO   ============*/
 @media screen and (min-width: 1440px) {
   .hero-section {
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-position: left;
@@ -346,7 +346,7 @@
 
   .social-icon:hover,
   .hero-e-mail:hover {
-    background-color: var(--main-color);
+    background: var(--main-color);
     box-shadow: 0 0 5px var(--main-color);
     filter: brightness(0.6);
   }
