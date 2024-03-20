@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.documentElement.style.setProperty('--red', '#ED3B44');
                 document.documentElement.style.setProperty('--red-hover', '#E0373F');
                 headerMobMenu.style.backgroundImage = `url(${image1})`;
-
                 headerMobMenu.style.backgroundPosition = 'top left';
                 headerMobMenu.style.backgroundSize = 'cover';
                 headerMobMenu.style.backgroundRepeat = 'no-repeat';
