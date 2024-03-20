@@ -4,77 +4,66 @@ document.addEventListener('DOMContentLoaded', function() {
     const headerMobMenu = document.querySelector('.mobile-menu-header');
     const covers = document.querySelector('.covers');
 
-    const colors = [
-        { // Для першого спана
-            main: '#ED3B44',
-            hover: '#E0373F',
-            headerBackground: "url('./img/mobil/bg/m-hero.png') top left / cover no-repeat",
-            coverBackground: "url('./img/mobil/bg/m-covers.png')"
-        },
-        { // Для другого спана
-            main: '#C6E327',
-            hover: 'rgba(198, 227, 39, 0.8)',
-            headerBackground: "linear-gradient(90deg, #1C1D20 49.69%, #596808 67.71%, rgba(198, 227, 39) 99.91%)",
-            coverBackground: "none"
-        },
-        { // Для третього спана
-            main: '#0041E8',
-            hover: 'rgba(0, 65, 232, 0.8)',
-            headerBackground: "linear-gradient(90deg, #1C1C20 49.69%, #001958 67.71%, #0041E8 99.91%)",
-            coverBackground: "none"
-        },
-        { // Для четвертого спана
-            main: '#E6533C',
-            hover: 'rgba(230, 83, 60, 0.8)',
-            headerBackground: "linear-gradient(90deg, #1C1D20 49.69%, #9F3626 67.71%, #E6533C 99.91%)",
-            coverBackground: "none"
-        },
-        { // Для п'ятого спана
-            main: '#2B4441',
-            hover: 'rgba(43, 68, 65, 0.8)',
-            headerBackground: "linear-gradient(90deg, #1C1D20 49.69%, #1E3633 67.71%, #2B4441 99.91%)",
-            coverBackground: "none"
-        },
-        { // Для шостого спана
-            main: '#FF7F08',
-            hover: 'rgba(255, 127, 8, 0.8)',
-            headerBackground: "linear-gradient(90deg, #1C1D20 49.69%, #AC5300 67.71%, #FF7F08 99.91%, #FF7F08 99.91%)",
-            coverBackground: "none"
-        }
-    ];
-
     colorOptions.forEach((span, index) => {
         span.addEventListener('click', function() {
-            if (index === 0) {
-                covers.style.backgroundImage = colors[index].coverBackground;
-            } else {
+            if (index !== 0){
                 covers.style.backgroundImage = "none";
+            } else {
+                covers.style.backgroundImage = "url('./img/mobil/bg/m-covers.png')";
             }
 
-            document.documentElement.style.setProperty('--red', colors[index].main);
-            document.documentElement.style.setProperty('--red-hover', colors[index].hover);
-            headerMobMenu.style.backgroundImage = colors[index].headerBackground;
+            if (index === 0){
+                document.documentElement.style.setProperty('--red', '#ED3B44');
+                document.documentElement.style.setProperty('--red-hover', '#E0373F');
+                headerMobMenu.style.backgroundImage = "url('./img/mobil/bg/m-hero.png')";
+                headerMobMenu.style.backgroundPosition = 'top left';
+                headerMobMenu.style.backgroundSize = 'cover';
+                headerMobMenu.style.backgroundRepeat = 'no-repeat';
+            }
+            else if (index === 1) {
+                document.documentElement.style.setProperty('--red', '#C6E327');
+                document.documentElement.style.setProperty('--red-hover', 'rgba(198, 227, 39, 0.8)');
+                headerMobMenu.style.backgroundImage = "none";
+                headerMobMenu.style.background = "linear-gradient(90deg, #1C1D20 49.69%, #596808 67.71%, rgba(198, 227, 39) 99.91%)";
+            } else if(index === 2){
+                document.documentElement.style.setProperty('--red', '#0041E8');
+                document.documentElement.style.setProperty('--red-hover', 'rgba(0, 65, 232, 0.8)'); 
+                headerMobMenu.style.backgroundImage = "none";
+                headerMobMenu.style.background = "linear-gradient(90deg, #1C1C20 49.69%, #001958 67.71%, #0041E8 99.91%)";
+            } else if(index === 3){
+                document.documentElement.style.setProperty('--red', '#E6533C');
+                document.documentElement.style.setProperty('--red-hover', 'rgba(230, 83, 60, 0.8)');
+                headerMobMenu.style.backgroundImage = "none";
+                headerMobMenu.style.background = "linear-gradient(90deg, #1C1D20 49.69%, #9F3626 67.71%, #E6533C 99.91%)";
+            }else if(index === 4){
+                document.documentElement.style.setProperty('--red', '#2B4441');
+                document.documentElement.style.setProperty('--red-hover', 'rgba(43, 68, 65, 0.8)');
+                headerMobMenu.style.backgroundImage = "none";
+                headerMobMenu.style.background = "linear-gradient(90deg, #1C1D20 49.69%, #1E3633 67.71%, #2B4441 99.91%)";
+            }else if(index === 5){
+                document.documentElement.style.setProperty('--red', '#FF7F08');
+                document.documentElement.style.setProperty('--red-hover', 'rgba(255, 127, 8, 0.8)');
+                headerMobMenu.style.backgroundImage = "none";
+                headerMobMenu.style.background = "linear-gradient(90deg, #1C1D20 49.69%, #AC5300 67.71%, #FF7F08 99.91%, #FF7F08 99.91%)";
+            }
 
-            colorOptions.forEach(span => span.classList.remove('active'));
-            this.classList.add('active');
-
-            const theme = this.classList[0]; // Отримуємо клас першого елемента span (theme)
+            const theme = this.classList[0]; // Получаем класс первого элемента span (theme)
             const selectedSpan = document.querySelector('.color .active');
             selectedSpan.classList.remove('active');
             this.classList.add('active');
 
-            // Зберігаємо поточне значення background та background-image
+            // Сохраняем текущее значение background и background-image
             const currentBackground = heroSection.style.background;
             const currentBackgroundImage = heroSection.style.backgroundImage;
 
-            // Встановлюємо нові значення для теми
+            // Устанавливаем новые значения для темы
             heroSection.style.setProperty('--main-color', getComputedStyle(this).getPropertyValue('--main-color'));
             heroSection.setAttribute('data-theme', theme);
             heroSection.style.backgroundImage = getComputedStyle(this).backgroundImage;
 
-            // Відновлюємо збережені значення background та background-image
+            // Восстанавливаем сохраненные значения background и background-image
             heroSection.style.background = currentBackground;
             heroSection.style.backgroundImage = currentBackgroundImage;
         });
     });
-});
+})
