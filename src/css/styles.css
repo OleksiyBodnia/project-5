@@ -13,11 +13,13 @@
     --black: #1C1D20;
     --dark-gray: #242527;
     --medium-gray: #3B3B3B;
-    --red: #ED3B44;
     --white: #FAFAFA;
-    --red-hover: #E0373F;
     --green: #3CBC81;
-    --light-green: #C6E327;
+    --red: #ED3B44;
+    --red-hover: #E0373F;
+}
+
+/* --light-green: #C6E327;
     --light-green-hover: rgba(198, 227, 39, 0.8);
     --blue: #0041E8;
     --blue-hover: rgba(0, 65, 232, 0.8);
@@ -26,5 +28,4 @@
     --dark-green: #2B4441;
     --dark-green-hover: rgba(43, 68, 65, 0.8);
     --orange-yellow: #FF7F08;
-    --orange-yellow-hover: rgba(255, 127, 8, 0.8);
-}
+    --orange-yellow-hover: rgba(255, 127, 8, 0.8); */
