@@ -76,6 +76,10 @@ html {
 body.lock {
   overflow: hidden;
 }
+@font-face {
+  font-family: "Inter Tight";
+  src: url('../fonts/InterTight-VariableFont_wght.ttf');
+}
 
 
 
