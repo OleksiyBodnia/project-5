@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { // Для першого спана
             main: '#ED3B44',
             hover: '#E0373F',
-            headerBackground: "url('../img/mobil/bg/m-hero.png') top left / cover no-repeat",
-            coverBackground: "url('../img/mobil/bg/m-covers.png')"
+            headerBackground: "url('./img/mobil/bg/m-hero.png') top left / cover no-repeat",
+            coverBackground: "url('./img/mobil/bg/m-covers.png')"
         },
         { // Для другого спана
             main: '#C6E327',
