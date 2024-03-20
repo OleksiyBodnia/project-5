@@ -180,9 +180,9 @@
 
 /* _360_ */
 
-/* .benefits-list-item:hover {
+.benefits-list-item:hover {
     animation: rotate 1s ease-in-out forwards;
-} */
+}
 
 @keyframes rotate {
     from {
@@ -190,6 +190,6 @@
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(4deg);
     }
 }

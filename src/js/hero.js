@@ -1,3 +1,6 @@
+import image1 from '../img/mobil/bg/m-hero.png';
+import image2 from '../img/mobil/bg/m-covers.png';
+
 document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero-section');
     const colorOptions = document.querySelectorAll('.color span');
@@ -9,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (index !== 0){
                 covers.style.backgroundImage = "none";
             } else {
-                covers.style.backgroundImage = "url('/src/img/mobil/bg/m-covers.png')";
+                covers.style.backgroundImage = `url(${image2})`;
             }
 
             if (index === 0){
                 document.documentElement.style.setProperty('--red', '#ED3B44');
                 document.documentElement.style.setProperty('--red-hover', '#E0373F');
-                headerMobMenu.style.backgroundImage = "url('/src/img/mobil/bg/m-hero.png')";
+                headerMobMenu.style.backgroundImage = `url(${image1})`;
 
                 headerMobMenu.style.backgroundPosition = 'top left';
                 headerMobMenu.style.backgroundSize = 'cover';
