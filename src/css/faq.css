@@ -53,7 +53,7 @@
     }
 
     .faq-question {
-        color: #FAFAFA;
+        color: var(--white);
         font-family: "Inter Tight";
         font-size: 20px;
         font-style: normal;
@@ -98,11 +98,11 @@
     }
 
     .accordion-container-faq .ac .ac-trigger:hover {
-        border-color: #FAFAFA;
+        border-color: var(--white);
     }
 
     .accordion-container-faq .ac .ac-trigger:focus {
-        border-color: #FAFAFA
+        border-color: var(--white);
     }
 }
 
