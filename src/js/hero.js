@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (index !== 0){
                 covers.style.backgroundImage = "none";
             } else {
-                covers.style.backgroundImage = "url('./img/mobil/bg/m-covers.png')";
+                covers.style.backgroundImage = "url('/src/img/mobil/bg/m-covers.png')";
             }
 
             if (index === 0){
                 document.documentElement.style.setProperty('--red', '#ED3B44');
                 document.documentElement.style.setProperty('--red-hover', '#E0373F');
-                headerMobMenu.style.backgroundImage = "url('./img/mobil/bg/m-hero.png')";
+                headerMobMenu.style.backgroundImage = "url('/src/img/mobil/bg/m-hero.png')";
                 headerMobMenu.style.backgroundPosition = 'top left';
                 headerMobMenu.style.backgroundSize = 'cover';
                 headerMobMenu.style.backgroundRepeat = 'no-repeat';
