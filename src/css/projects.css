@@ -22,13 +22,13 @@
         margin-bottom: 32px;
     }
     .left-side{
-        background-color: #FAFAFA;
+        background-color: var(--white);
         padding: 32px;
         border-radius: 24px 24px 0 0;
     }
     .right-side{
         border-radius: 0 0 24px 24px;
-        background-color: #242527;
+        background-color: var(--dark-gray);
         padding: 100px 16px;
     }
     .tech-skills-list{
@@ -46,7 +46,7 @@
         align-items: center;
         border-radius: 60px;
         border: 1px solid rgba(28, 29, 32, 0.20);
-        color: #1C1D20;
+        color: var(--black);
         font-family: "Inter Tight";
         font-size: 16px;
         font-style: normal;
@@ -57,9 +57,9 @@
     }
     .tech-skill-item:hover,
     .tech-skill-item:focus{
-        border: 1px solid #ED3B44;
-        background-color: #ED3B44;
-        color: #FAFAFA;
+        border: 1px solid var(--red);
+        background-color: var(--red);
+        color: var(--white);
     }
     .projest-header{
         color: #1C1D20;
@@ -78,8 +78,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 60px;
-        background: #ED3B44;
-        color: #FAFAFA;
+        background: var(--red);
+        color: var(--white);
         font-family: "Inter Tight";
         font-size: 16px;
         font-style: normal;
@@ -91,7 +91,7 @@
     }
     .project-link:hover,
     .project-link:focus{
-        background-color: #E0373F;
+        background-color: var(--red-hover);
     }
     #btn-div-id{
         position: relative;
