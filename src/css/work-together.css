@@ -501,9 +501,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     justify-content: center;
     background: var(--dark-gray);
     border: none;
+    border-radius: 50%;
     position: absolute;
     top: 20px;
     right: 20px;
+    padding: 3px;
 }
 
 /* заборона прокрутки сторінки при відкритому модальному вікні */
