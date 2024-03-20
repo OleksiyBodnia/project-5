@@ -9,7 +9,6 @@ background-size: cover;
 margin: 0 auto;
 
 }
-.covers-img {
 .cowers-img {
 display: flex;
 gap: 35PX;
@@ -18,12 +17,12 @@ height: 163px;
 margin-left: 0;
 margin-right: 0;
 }
-}
+
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
-screen and (min-resolution: 2dppi) and (min-width: 320px),
+screen and (min-resolution: 2dppx) and (min-width: 320px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
 .covers{
-background-image: ***@***.***);
+background-image: url(../img/mobil/bg/m-covers@2x.png);
 }
 }
 
@@ -40,8 +39,8 @@ padding-bottom: 64px;
 background-image:
 url(../img/mobil/bg/m-covers.png);
 padding-bottom: 0;
-width: 375px;
 height: 497px;
+width: 100%;
 overflow: hidden;
 position: relative;
 }
@@ -88,7 +87,7 @@ margin-right: 0;
 }
 }
 .covers {
-width: 768px;
+width: 100%;
 height: 960px;
 
 background-image:
@@ -116,10 +115,10 @@ width: 544px;
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 .covers {
-background-image: ***@***.***);
+background-image: url('../img/tablet/bg/t-covers@2x.png');
 }
 
 }
@@ -131,7 +130,7 @@ background-image: ***@***.***);
 padding-bottom: 164px;
 }
 .covers {
-width: 1440px;
+width: 100%;
 position: relative;
 background-image:
 url(../img/desktop/bg/d-covers.png);
@@ -141,15 +140,15 @@ background-size: cover;
 margin: 0 auto;
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-screen and (min-resolution: 2dppi) and (min-width: 1440px),
+screen and (min-resolution: 2dppx) and (min-width: 1440px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
 .covers {
 padding-bottom: 0;
-width: 1440px;
+width: 100%;
 height: 960px;
 overflow: hidden;
 position: relative;
-background-image: ***@***.***);
+background-image: url('../img/desktop/bg/d-covers@2x.png');
 }
 }
 .marquee {
