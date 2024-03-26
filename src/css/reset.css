@@ -27,7 +27,8 @@ a {
   cursor: pointer;
 }
 
-button,input {
+button,
+input {
   cursor: pointer;
 }
 
@@ -77,11 +78,9 @@ body.lock {
   overflow: hidden;
 }
 @font-face {
-  font-family: "Inter Tight";
+  font-family: 'Inter Tight';
   src: url('../fonts/InterTight-VariableFont_wght.ttf');
 }
-
-
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .container {
