@@ -1,3 +1,125 @@
+@media screen and (max-width: 374px){
+    .projects-list{
+        margin-bottom: 32px;
+    }
+    .btn-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 12px;
+    }
+    .projest-main-header{
+        color: rgba(250, 250, 250, 0.40);
+        font-family: "Inter Tight";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5; /* 150% */
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+    .left-side{
+        background-color: var(--white);
+        padding: 32px;
+        border-radius: 24px 24px 0 0;
+    }
+    .right-side{
+        border-radius: 0 0 24px 24px;
+        background-color: var(--dark-gray);
+        padding: 100px 16px;
+    }
+    .tech-skills-list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 96px;
+    }
+    .tech-skill-item{
+        background-color: transparent;
+        display: flex;
+        padding: 13px 18px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        border: 1px solid rgba(28, 29, 32, 0.20);
+        color: var(--black);
+        font-family: "Inter Tight";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.02em;
+        transition: border 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+    }
+    .tech-skill-item:hover,
+    .tech-skill-item:focus{
+        border: 1px solid var(--red);
+        background-color: var(--red);
+        color: var(--white);
+    }
+    .projest-header{
+        color: #1C1D20;
+        font-family: "Inter Tight";
+        
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.16; /* 116.667% */
+        letter-spacing: -0.03em;
+        
+        margin-bottom: 32px;
+    }
+    .project-link{
+        display: flex;
+        margin: 0 auto;
+        max-width: 150px;
+        padding: 13px 32px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        background: var(--red);
+        color: var(--white);
+        font-family: "Inter Tight";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.02em;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+    .project-link:hover,
+    .project-link:focus{
+        background-color: var(--red-hover);
+    }
+    #btn-div-id{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 32px;
+        margin-bottom: 64px;
+
+    }
+    #left-btn,
+    #right-btn{
+        display: block;
+        padding: 14px;
+        border: 1px solid rgba(250, 250, 250, 0.50);
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        color: transparent;
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
 
 @media screen and (min-width: 375px){
     .projects-list{

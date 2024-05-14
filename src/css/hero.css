@@ -116,16 +116,16 @@
 }
 .hero {
   color: var(--third-color);
-  padding-top: 281px;
+  padding-top: 200px;
   padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 212px;
+  gap: 180px;
 }
 
 .main-title {
-  width: 343px;
+  width: 100%;
   font-size: 50px;
   font-weight: 500;
   line-height: 1;
@@ -141,17 +141,18 @@
   color: inherit;
 }
 .hero-contact {
+  bottom: -20px;
   position: relative;
   display: flex;
-  flex-direction: row;
-  gap: 4px;
+  flex-direction: column;
+  gap: 16px;
   align-items: center;
 }
 .contact-icon {
   display: flex;
   flex-direction: row;
-  gap: 4px;
-  margin-left: auto;
+  gap: 8px;
+  
 }
 .social-icon {
   font-size: 14px;
@@ -238,6 +239,22 @@
   transform: scale(1.5);
 }
 
+@media screen and (min-width: 375px) {
+  .hero-contact {
+    bottom: -20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+  }
+  .contact-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    
+  }
+}
 
 /*======= TABLET STYLES HERO   ============*/
 @media screen and (min-width: 768px) {
@@ -253,7 +270,7 @@
     gap: 187px;
   }
   .main-title {
-    width: 632px;
+    width: 100%;
     font-size: 90px;
     font-weight: 500;
     line-height: 1;

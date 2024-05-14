@@ -7,9 +7,12 @@ const slideContainer = document.querySelector(".container");
 const reviemList = document.querySelector('.reviews-list');
 const notFoundLabel = document.querySelector('.not-found');
 
+
 function countSlidesPerView() {
   const containerWidth = slideContainer.clientWidth;
-  if (containerWidth === 375) {
+  if (containerWidth === 320) {
+    return 1;
+  } else if (containerWidth === 375) {
     return 1;
   } else if (containerWidth === 768) {
     return 2;
@@ -17,7 +20,6 @@ function countSlidesPerView() {
     return 4;
   }
 }
-
 const swiper2 = new Swiper('.swiper2', {
   direction: 'horizontal',
   slidesPerView: countSlidesPerView(),
