@@ -1,31 +1,50 @@
-.covers {
 
-width: 375px;
-background-image:
-url(../img/mobil/bg/m-covers.png);
-background-repeat: no-repeat;
-background-position: 50% 50%;
-background-size: cover;
-margin: 0 auto;
-
-}
-.cowers-img {
-display: flex;
-gap: 35PX;
-column-gap: 35px;
-height: 163px;
-margin-left: 0;
-margin-right: 0;
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 320px),
-screen and (min-resolution: 2dppx) and (min-width: 320px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
-.covers{
-background-image: url(../img/mobil/bg/m-covers@2x.png);
-}
-}
-
+@media screen and (max-width: 375px) {
+    .covers-section {
+    
+    
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 64px;
+    
+    }
+    .covers{
+    background-image:
+    url(../img/mobil/bg/m-covers.png);
+    padding-bottom: 0;
+    height: 497px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    }
+    
+    
+    .marquee {
+    position: absolute;
+    top: 300px;
+    left: -200px;
+    }
+    
+    .marquee__inner {
+    display: flex;
+    transform: rotate(16deg);
+    gap: 30px;
+    margin-bottom: 30px;
+    height: 162px;
+    }
+    
+    .marquee__line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 282px;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    }
+    }
 @media screen and (min-width: 375px) {
 .covers-section {
 

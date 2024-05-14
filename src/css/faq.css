@@ -27,7 +27,7 @@
     padding: 0;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 375px) {
 
     .faq-section {
         margin-bottom: 64px;
